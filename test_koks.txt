@@ -1,0 +1,493 @@
+Number: 10, Terminal: False, p1: 0, p2: 0, level: 0 False
+|  Number: 20, Terminal: False, p1: 0, p2: 0, level: 1 False
+|  |  Number: 40, Terminal: False, p1: 0, p2: 0, level: 2 False
+|  |  |  Number: 80, Terminal: False, p1: 0, p2: 0, level: 3 False
+|  |  |  |  Number: 160, Terminal: False, p1: 0, p2: 0, level: 4 False
+|  |  |  |  |  Number: 320, Terminal: False, p1: 0, p2: 0, level: 5 False
+|  |  |  |  |  |  Number: 640, Terminal: False, p1: 0, p2: 0, level: 6 False
+|  |  |  |  |  |  |  Number: 1280, Terminal: True, p1: 0, p2: 0, level: 7 True
+|  |  |  |  |  |  |  Number: 1920, Terminal: True, p1: 0, p2: 0, level: 7 True
+|  |  |  |  |  |  |  Number: 2560, Terminal: True, p1: 0, p2: 0, level: 7 True
+|  |  |  |  |  |  Number: 960, Terminal: False, p1: 0, p2: 0, level: 6 False
+|  |  |  |  |  |  |  Number: 1920, Terminal: True, p1: 0, p2: 0, level: 7 True
+|  |  |  |  |  |  |  Number: 2880, Terminal: True, p1: 0, p2: 0, level: 7 True
+|  |  |  |  |  |  |  Number: 3840, Terminal: True, p1: 0, p2: 0, level: 7 True
+|  |  |  |  |  |  Number: 1280, Terminal: True, p1: 0, p2: 0, level: 6 True
+|  |  |  |  |  Number: 480, Terminal: False, p1: 0, p2: 0, level: 5 False
+|  |  |  |  |  |  Number: 960, Terminal: False, p1: 0, p2: 0, level: 6 False
+|  |  |  |  |  |  |  Number: 1920, Terminal: True, p1: 0, p2: 0, level: 7 True
+|  |  |  |  |  |  |  Number: 2880, Terminal: True, p1: 0, p2: 0, level: 7 True
+|  |  |  |  |  |  |  Number: 3840, Terminal: True, p1: 0, p2: 0, level: 7 True
+|  |  |  |  |  |  Number: 1440, Terminal: True, p1: 0, p2: 0, level: 6 True
+|  |  |  |  |  |  Number: 1920, Terminal: True, p1: 0, p2: 0, level: 6 True
+|  |  |  |  |  Number: 640, Terminal: False, p1: 0, p2: 0, level: 5 False
+|  |  |  |  |  |  Number: 1280, Terminal: True, p1: 0, p2: 0, level: 6 True
+|  |  |  |  |  |  Number: 1920, Terminal: True, p1: 0, p2: 0, level: 6 True
+|  |  |  |  |  |  Number: 2560, Terminal: True, p1: 0, p2: 0, level: 6 True
+|  |  |  |  Number: 240, Terminal: False, p1: 0, p2: 0, level: 4 False
+|  |  |  |  |  Number: 480, Terminal: False, p1: 0, p2: 0, level: 5 False
+|  |  |  |  |  |  Number: 960, Terminal: False, p1: 0, p2: 0, level: 6 False
+|  |  |  |  |  |  |  Number: 1920, Terminal: True, p1: 0, p2: 0, level: 7 True
+|  |  |  |  |  |  |  Number: 2880, Terminal: True, p1: 0, p2: 0, level: 7 True
+|  |  |  |  |  |  |  Number: 3840, Terminal: True, p1: 0, p2: 0, level: 7 True
+|  |  |  |  |  |  Number: 1440, Terminal: True, p1: 0, p2: 0, level: 6 True
+|  |  |  |  |  |  Number: 1920, Terminal: True, p1: 0, p2: 0, level: 6 True
+|  |  |  |  |  Number: 720, Terminal: False, p1: 0, p2: 0, level: 5 False
+|  |  |  |  |  |  Number: 1440, Terminal: True, p1: 0, p2: 0, level: 6 True
+|  |  |  |  |  |  Number: 2160, Terminal: True, p1: 0, p2: 0, level: 6 True
+|  |  |  |  |  |  Number: 2880, Terminal: True, p1: 0, p2: 0, level: 6 True
+|  |  |  |  |  Number: 960, Terminal: False, p1: 0, p2: 0, level: 5 False
+|  |  |  |  |  |  Number: 1920, Terminal: True, p1: 0, p2: 0, level: 6 True
+|  |  |  |  |  |  Number: 2880, Terminal: True, p1: 0, p2: 0, level: 6 True
+|  |  |  |  |  |  Number: 3840, Terminal: True, p1: 0, p2: 0, level: 6 True
+|  |  |  |  Number: 320, Terminal: False, p1: 0, p2: 0, level: 4 False
+|  |  |  |  |  Number: 640, Terminal: False, p1: 0, p2: 0, level: 5 False
+|  |  |  |  |  |  Number: 1280, Terminal: True, p1: 0, p2: 0, level: 6 True
+|  |  |  |  |  |  Number: 1920, Terminal: True, p1: 0, p2: 0, level: 6 True
+|  |  |  |  |  |  Number: 2560, Terminal: True, p1: 0, p2: 0, level: 6 True
+|  |  |  |  |  Number: 960, Terminal: False, p1: 0, p2: 0, level: 5 False
+|  |  |  |  |  |  Number: 1920, Terminal: True, p1: 0, p2: 0, level: 6 True
+|  |  |  |  |  |  Number: 2880, Terminal: True, p1: 0, p2: 0, level: 6 True
+|  |  |  |  |  |  Number: 3840, Terminal: True, p1: 0, p2: 0, level: 6 True
+|  |  |  |  |  Number: 1280, Terminal: True, p1: 0, p2: 0, level: 5 True
+|  |  |  Number: 120, Terminal: False, p1: 0, p2: 0, level: 3 False
+|  |  |  |  Number: 240, Terminal: False, p1: 0, p2: 0, level: 4 False
+|  |  |  |  |  Number: 480, Terminal: False, p1: 0, p2: 0, level: 5 False
+|  |  |  |  |  |  Number: 960, Terminal: False, p1: 0, p2: 0, level: 6 False
+|  |  |  |  |  |  |  Number: 1920, Terminal: True, p1: 0, p2: 0, level: 7 True
+|  |  |  |  |  |  |  Number: 2880, Terminal: True, p1: 0, p2: 0, level: 7 True
+|  |  |  |  |  |  |  Number: 3840, Terminal: True, p1: 0, p2: 0, level: 7 True
+|  |  |  |  |  |  Number: 1440, Terminal: True, p1: 0, p2: 0, level: 6 True
+|  |  |  |  |  |  Number: 1920, Terminal: True, p1: 0, p2: 0, level: 6 True
+|  |  |  |  |  Number: 720, Terminal: False, p1: 0, p2: 0, level: 5 False
+|  |  |  |  |  |  Number: 1440, Terminal: True, p1: 0, p2: 0, level: 6 True
+|  |  |  |  |  |  Number: 2160, Terminal: True, p1: 0, p2: 0, level: 6 True
+|  |  |  |  |  |  Number: 2880, Terminal: True, p1: 0, p2: 0, level: 6 True
+|  |  |  |  |  Number: 960, Terminal: False, p1: 0, p2: 0, level: 5 False
+|  |  |  |  |  |  Number: 1920, Terminal: True, p1: 0, p2: 0, level: 6 True
+|  |  |  |  |  |  Number: 2880, Terminal: True, p1: 0, p2: 0, level: 6 True
+|  |  |  |  |  |  Number: 3840, Terminal: True, p1: 0, p2: 0, level: 6 True
+|  |  |  |  Number: 360, Terminal: False, p1: 0, p2: 0, level: 4 False
+|  |  |  |  |  Number: 720, Terminal: False, p1: 0, p2: 0, level: 5 False
+|  |  |  |  |  |  Number: 1440, Terminal: True, p1: 0, p2: 0, level: 6 True
+|  |  |  |  |  |  Number: 2160, Terminal: True, p1: 0, p2: 0, level: 6 True
+|  |  |  |  |  |  Number: 2880, Terminal: True, p1: 0, p2: 0, level: 6 True
+|  |  |  |  |  Number: 1080, Terminal: False, p1: 0, p2: 0, level: 5 False
+|  |  |  |  |  |  Number: 2160, Terminal: True, p1: 0, p2: 0, level: 6 True
+|  |  |  |  |  |  Number: 3240, Terminal: True, p1: 0, p2: 0, level: 6 True
+|  |  |  |  |  |  Number: 4320, Terminal: True, p1: 0, p2: 0, level: 6 True
+|  |  |  |  |  Number: 1440, Terminal: True, p1: 0, p2: 0, level: 5 True
+|  |  |  |  Number: 480, Terminal: False, p1: 0, p2: 0, level: 4 False
+|  |  |  |  |  Number: 960, Terminal: False, p1: 0, p2: 0, level: 5 False
+|  |  |  |  |  |  Number: 1920, Terminal: True, p1: 0, p2: 0, level: 6 True
+|  |  |  |  |  |  Number: 2880, Terminal: True, p1: 0, p2: 0, level: 6 True
+|  |  |  |  |  |  Number: 3840, Terminal: True, p1: 0, p2: 0, level: 6 True
+|  |  |  |  |  Number: 1440, Terminal: True, p1: 0, p2: 0, level: 5 True
+|  |  |  |  |  Number: 1920, Terminal: True, p1: 0, p2: 0, level: 5 True
+|  |  |  Number: 160, Terminal: False, p1: 0, p2: 0, level: 3 False
+|  |  |  |  Number: 320, Terminal: False, p1: 0, p2: 0, level: 4 False
+|  |  |  |  |  Number: 640, Terminal: False, p1: 0, p2: 0, level: 5 False
+|  |  |  |  |  |  Number: 1280, Terminal: True, p1: 0, p2: 0, level: 6 True
+|  |  |  |  |  |  Number: 1920, Terminal: True, p1: 0, p2: 0, level: 6 True
+|  |  |  |  |  |  Number: 2560, Terminal: True, p1: 0, p2: 0, level: 6 True
+|  |  |  |  |  Number: 960, Terminal: False, p1: 0, p2: 0, level: 5 False
+|  |  |  |  |  |  Number: 1920, Terminal: True, p1: 0, p2: 0, level: 6 True
+|  |  |  |  |  |  Number: 2880, Terminal: True, p1: 0, p2: 0, level: 6 True
+|  |  |  |  |  |  Number: 3840, Terminal: True, p1: 0, p2: 0, level: 6 True
+|  |  |  |  |  Number: 1280, Terminal: True, p1: 0, p2: 0, level: 5 True
+|  |  |  |  Number: 480, Terminal: False, p1: 0, p2: 0, level: 4 False
+|  |  |  |  |  Number: 960, Terminal: False, p1: 0, p2: 0, level: 5 False
+|  |  |  |  |  |  Number: 1920, Terminal: True, p1: 0, p2: 0, level: 6 True
+|  |  |  |  |  |  Number: 2880, Terminal: True, p1: 0, p2: 0, level: 6 True
+|  |  |  |  |  |  Number: 3840, Terminal: True, p1: 0, p2: 0, level: 6 True
+|  |  |  |  |  Number: 1440, Terminal: True, p1: 0, p2: 0, level: 5 True
+|  |  |  |  |  Number: 1920, Terminal: True, p1: 0, p2: 0, level: 5 True
+|  |  |  |  Number: 640, Terminal: False, p1: 0, p2: 0, level: 4 False
+|  |  |  |  |  Number: 1280, Terminal: True, p1: 0, p2: 0, level: 5 True
+|  |  |  |  |  Number: 1920, Terminal: True, p1: 0, p2: 0, level: 5 True
+|  |  |  |  |  Number: 2560, Terminal: True, p1: 0, p2: 0, level: 5 True
+|  |  Number: 60, Terminal: False, p1: 0, p2: 0, level: 2 False
+|  |  |  Number: 120, Terminal: False, p1: 0, p2: 0, level: 3 False
+|  |  |  |  Number: 240, Terminal: False, p1: 0, p2: 0, level: 4 False
+|  |  |  |  |  Number: 480, Terminal: False, p1: 0, p2: 0, level: 5 False
+|  |  |  |  |  |  Number: 960, Terminal: False, p1: 0, p2: 0, level: 6 False
+|  |  |  |  |  |  |  Number: 1920, Terminal: True, p1: 0, p2: 0, level: 7 True
+|  |  |  |  |  |  |  Number: 2880, Terminal: True, p1: 0, p2: 0, level: 7 True
+|  |  |  |  |  |  |  Number: 3840, Terminal: True, p1: 0, p2: 0, level: 7 True
+|  |  |  |  |  |  Number: 1440, Terminal: True, p1: 0, p2: 0, level: 6 True
+|  |  |  |  |  |  Number: 1920, Terminal: True, p1: 0, p2: 0, level: 6 True
+|  |  |  |  |  Number: 720, Terminal: False, p1: 0, p2: 0, level: 5 False
+|  |  |  |  |  |  Number: 1440, Terminal: True, p1: 0, p2: 0, level: 6 True
+|  |  |  |  |  |  Number: 2160, Terminal: True, p1: 0, p2: 0, level: 6 True
+|  |  |  |  |  |  Number: 2880, Terminal: True, p1: 0, p2: 0, level: 6 True
+|  |  |  |  |  Number: 960, Terminal: False, p1: 0, p2: 0, level: 5 False
+|  |  |  |  |  |  Number: 1920, Terminal: True, p1: 0, p2: 0, level: 6 True
+|  |  |  |  |  |  Number: 2880, Terminal: True, p1: 0, p2: 0, level: 6 True
+|  |  |  |  |  |  Number: 3840, Terminal: True, p1: 0, p2: 0, level: 6 True
+|  |  |  |  Number: 360, Terminal: False, p1: 0, p2: 0, level: 4 False
+|  |  |  |  |  Number: 720, Terminal: False, p1: 0, p2: 0, level: 5 False
+|  |  |  |  |  |  Number: 1440, Terminal: True, p1: 0, p2: 0, level: 6 True
+|  |  |  |  |  |  Number: 2160, Terminal: True, p1: 0, p2: 0, level: 6 True
+|  |  |  |  |  |  Number: 2880, Terminal: True, p1: 0, p2: 0, level: 6 True
+|  |  |  |  |  Number: 1080, Terminal: False, p1: 0, p2: 0, level: 5 False
+|  |  |  |  |  |  Number: 2160, Terminal: True, p1: 0, p2: 0, level: 6 True
+|  |  |  |  |  |  Number: 3240, Terminal: True, p1: 0, p2: 0, level: 6 True
+|  |  |  |  |  |  Number: 4320, Terminal: True, p1: 0, p2: 0, level: 6 True
+|  |  |  |  |  Number: 1440, Terminal: True, p1: 0, p2: 0, level: 5 True
+|  |  |  |  Number: 480, Terminal: False, p1: 0, p2: 0, level: 4 False
+|  |  |  |  |  Number: 960, Terminal: False, p1: 0, p2: 0, level: 5 False
+|  |  |  |  |  |  Number: 1920, Terminal: True, p1: 0, p2: 0, level: 6 True
+|  |  |  |  |  |  Number: 2880, Terminal: True, p1: 0, p2: 0, level: 6 True
+|  |  |  |  |  |  Number: 3840, Terminal: True, p1: 0, p2: 0, level: 6 True
+|  |  |  |  |  Number: 1440, Terminal: True, p1: 0, p2: 0, level: 5 True
+|  |  |  |  |  Number: 1920, Terminal: True, p1: 0, p2: 0, level: 5 True
+|  |  |  Number: 180, Terminal: False, p1: 0, p2: 0, level: 3 False
+|  |  |  |  Number: 360, Terminal: False, p1: 0, p2: 0, level: 4 False
+|  |  |  |  |  Number: 720, Terminal: False, p1: 0, p2: 0, level: 5 False
+|  |  |  |  |  |  Number: 1440, Terminal: True, p1: 0, p2: 0, level: 6 True
+|  |  |  |  |  |  Number: 2160, Terminal: True, p1: 0, p2: 0, level: 6 True
+|  |  |  |  |  |  Number: 2880, Terminal: True, p1: 0, p2: 0, level: 6 True
+|  |  |  |  |  Number: 1080, Terminal: False, p1: 0, p2: 0, level: 5 False
+|  |  |  |  |  |  Number: 2160, Terminal: True, p1: 0, p2: 0, level: 6 True
+|  |  |  |  |  |  Number: 3240, Terminal: True, p1: 0, p2: 0, level: 6 True
+|  |  |  |  |  |  Number: 4320, Terminal: True, p1: 0, p2: 0, level: 6 True
+|  |  |  |  |  Number: 1440, Terminal: True, p1: 0, p2: 0, level: 5 True
+|  |  |  |  Number: 540, Terminal: False, p1: 0, p2: 0, level: 4 False
+|  |  |  |  |  Number: 1080, Terminal: False, p1: 0, p2: 0, level: 5 False
+|  |  |  |  |  |  Number: 2160, Terminal: True, p1: 0, p2: 0, level: 6 True
+|  |  |  |  |  |  Number: 3240, Terminal: True, p1: 0, p2: 0, level: 6 True
+|  |  |  |  |  |  Number: 4320, Terminal: True, p1: 0, p2: 0, level: 6 True
+|  |  |  |  |  Number: 1620, Terminal: True, p1: 0, p2: 0, level: 5 True
+|  |  |  |  |  Number: 2160, Terminal: True, p1: 0, p2: 0, level: 5 True
+|  |  |  |  Number: 720, Terminal: False, p1: 0, p2: 0, level: 4 False
+|  |  |  |  |  Number: 1440, Terminal: True, p1: 0, p2: 0, level: 5 True
+|  |  |  |  |  Number: 2160, Terminal: True, p1: 0, p2: 0, level: 5 True
+|  |  |  |  |  Number: 2880, Terminal: True, p1: 0, p2: 0, level: 5 True
+|  |  |  Number: 240, Terminal: False, p1: 0, p2: 0, level: 3 False
+|  |  |  |  Number: 480, Terminal: False, p1: 0, p2: 0, level: 4 False
+|  |  |  |  |  Number: 960, Terminal: False, p1: 0, p2: 0, level: 5 False
+|  |  |  |  |  |  Number: 1920, Terminal: True, p1: 0, p2: 0, level: 6 True
+|  |  |  |  |  |  Number: 2880, Terminal: True, p1: 0, p2: 0, level: 6 True
+|  |  |  |  |  |  Number: 3840, Terminal: True, p1: 0, p2: 0, level: 6 True
+|  |  |  |  |  Number: 1440, Terminal: True, p1: 0, p2: 0, level: 5 True
+|  |  |  |  |  Number: 1920, Terminal: True, p1: 0, p2: 0, level: 5 True
+|  |  |  |  Number: 720, Terminal: False, p1: 0, p2: 0, level: 4 False
+|  |  |  |  |  Number: 1440, Terminal: True, p1: 0, p2: 0, level: 5 True
+|  |  |  |  |  Number: 2160, Terminal: True, p1: 0, p2: 0, level: 5 True
+|  |  |  |  |  Number: 2880, Terminal: True, p1: 0, p2: 0, level: 5 True
+|  |  |  |  Number: 960, Terminal: False, p1: 0, p2: 0, level: 4 False
+|  |  |  |  |  Number: 1920, Terminal: True, p1: 0, p2: 0, level: 5 True
+|  |  |  |  |  Number: 2880, Terminal: True, p1: 0, p2: 0, level: 5 True
+|  |  |  |  |  Number: 3840, Terminal: True, p1: 0, p2: 0, level: 5 True
+|  |  Number: 80, Terminal: False, p1: 0, p2: 0, level: 2 False
+|  |  |  Number: 160, Terminal: False, p1: 0, p2: 0, level: 3 False
+|  |  |  |  Number: 320, Terminal: False, p1: 0, p2: 0, level: 4 False
+|  |  |  |  |  Number: 640, Terminal: False, p1: 0, p2: 0, level: 5 False
+|  |  |  |  |  |  Number: 1280, Terminal: True, p1: 0, p2: 0, level: 6 True
+|  |  |  |  |  |  Number: 1920, Terminal: True, p1: 0, p2: 0, level: 6 True
+|  |  |  |  |  |  Number: 2560, Terminal: True, p1: 0, p2: 0, level: 6 True
+|  |  |  |  |  Number: 960, Terminal: False, p1: 0, p2: 0, level: 5 False
+|  |  |  |  |  |  Number: 1920, Terminal: True, p1: 0, p2: 0, level: 6 True
+|  |  |  |  |  |  Number: 2880, Terminal: True, p1: 0, p2: 0, level: 6 True
+|  |  |  |  |  |  Number: 3840, Terminal: True, p1: 0, p2: 0, level: 6 True
+|  |  |  |  |  Number: 1280, Terminal: True, p1: 0, p2: 0, level: 5 True
+|  |  |  |  Number: 480, Terminal: False, p1: 0, p2: 0, level: 4 False
+|  |  |  |  |  Number: 960, Terminal: False, p1: 0, p2: 0, level: 5 False
+|  |  |  |  |  |  Number: 1920, Terminal: True, p1: 0, p2: 0, level: 6 True
+|  |  |  |  |  |  Number: 2880, Terminal: True, p1: 0, p2: 0, level: 6 True
+|  |  |  |  |  |  Number: 3840, Terminal: True, p1: 0, p2: 0, level: 6 True
+|  |  |  |  |  Number: 1440, Terminal: True, p1: 0, p2: 0, level: 5 True
+|  |  |  |  |  Number: 1920, Terminal: True, p1: 0, p2: 0, level: 5 True
+|  |  |  |  Number: 640, Terminal: False, p1: 0, p2: 0, level: 4 False
+|  |  |  |  |  Number: 1280, Terminal: True, p1: 0, p2: 0, level: 5 True
+|  |  |  |  |  Number: 1920, Terminal: True, p1: 0, p2: 0, level: 5 True
+|  |  |  |  |  Number: 2560, Terminal: True, p1: 0, p2: 0, level: 5 True
+|  |  |  Number: 240, Terminal: False, p1: 0, p2: 0, level: 3 False
+|  |  |  |  Number: 480, Terminal: False, p1: 0, p2: 0, level: 4 False
+|  |  |  |  |  Number: 960, Terminal: False, p1: 0, p2: 0, level: 5 False
+|  |  |  |  |  |  Number: 1920, Terminal: True, p1: 0, p2: 0, level: 6 True
+|  |  |  |  |  |  Number: 2880, Terminal: True, p1: 0, p2: 0, level: 6 True
+|  |  |  |  |  |  Number: 3840, Terminal: True, p1: 0, p2: 0, level: 6 True
+|  |  |  |  |  Number: 1440, Terminal: True, p1: 0, p2: 0, level: 5 True
+|  |  |  |  |  Number: 1920, Terminal: True, p1: 0, p2: 0, level: 5 True
+|  |  |  |  Number: 720, Terminal: False, p1: 0, p2: 0, level: 4 False
+|  |  |  |  |  Number: 1440, Terminal: True, p1: 0, p2: 0, level: 5 True
+|  |  |  |  |  Number: 2160, Terminal: True, p1: 0, p2: 0, level: 5 True
+|  |  |  |  |  Number: 2880, Terminal: True, p1: 0, p2: 0, level: 5 True
+|  |  |  |  Number: 960, Terminal: False, p1: 0, p2: 0, level: 4 False
+|  |  |  |  |  Number: 1920, Terminal: True, p1: 0, p2: 0, level: 5 True
+|  |  |  |  |  Number: 2880, Terminal: True, p1: 0, p2: 0, level: 5 True
+|  |  |  |  |  Number: 3840, Terminal: True, p1: 0, p2: 0, level: 5 True
+|  |  |  Number: 320, Terminal: False, p1: 0, p2: 0, level: 3 False
+|  |  |  |  Number: 640, Terminal: False, p1: 0, p2: 0, level: 4 False
+|  |  |  |  |  Number: 1280, Terminal: True, p1: 0, p2: 0, level: 5 True
+|  |  |  |  |  Number: 1920, Terminal: True, p1: 0, p2: 0, level: 5 True
+|  |  |  |  |  Number: 2560, Terminal: True, p1: 0, p2: 0, level: 5 True
+|  |  |  |  Number: 960, Terminal: False, p1: 0, p2: 0, level: 4 False
+|  |  |  |  |  Number: 1920, Terminal: True, p1: 0, p2: 0, level: 5 True
+|  |  |  |  |  Number: 2880, Terminal: True, p1: 0, p2: 0, level: 5 True
+|  |  |  |  |  Number: 3840, Terminal: True, p1: 0, p2: 0, level: 5 True
+|  |  |  |  Number: 1280, Terminal: True, p1: 0, p2: 0, level: 4 True
+|  Number: 30, Terminal: False, p1: 0, p2: 0, level: 1 False
+|  |  Number: 60, Terminal: False, p1: 0, p2: 0, level: 2 False
+|  |  |  Number: 120, Terminal: False, p1: 0, p2: 0, level: 3 False
+|  |  |  |  Number: 240, Terminal: False, p1: 0, p2: 0, level: 4 False
+|  |  |  |  |  Number: 480, Terminal: False, p1: 0, p2: 0, level: 5 False
+|  |  |  |  |  |  Number: 960, Terminal: False, p1: 0, p2: 0, level: 6 False
+|  |  |  |  |  |  |  Number: 1920, Terminal: True, p1: 0, p2: 0, level: 7 True
+|  |  |  |  |  |  |  Number: 2880, Terminal: True, p1: 0, p2: 0, level: 7 True
+|  |  |  |  |  |  |  Number: 3840, Terminal: True, p1: 0, p2: 0, level: 7 True
+|  |  |  |  |  |  Number: 1440, Terminal: True, p1: 0, p2: 0, level: 6 True
+|  |  |  |  |  |  Number: 1920, Terminal: True, p1: 0, p2: 0, level: 6 True
+|  |  |  |  |  Number: 720, Terminal: False, p1: 0, p2: 0, level: 5 False
+|  |  |  |  |  |  Number: 1440, Terminal: True, p1: 0, p2: 0, level: 6 True
+|  |  |  |  |  |  Number: 2160, Terminal: True, p1: 0, p2: 0, level: 6 True
+|  |  |  |  |  |  Number: 2880, Terminal: True, p1: 0, p2: 0, level: 6 True
+|  |  |  |  |  Number: 960, Terminal: False, p1: 0, p2: 0, level: 5 False
+|  |  |  |  |  |  Number: 1920, Terminal: True, p1: 0, p2: 0, level: 6 True
+|  |  |  |  |  |  Number: 2880, Terminal: True, p1: 0, p2: 0, level: 6 True
+|  |  |  |  |  |  Number: 3840, Terminal: True, p1: 0, p2: 0, level: 6 True
+|  |  |  |  Number: 360, Terminal: False, p1: 0, p2: 0, level: 4 False
+|  |  |  |  |  Number: 720, Terminal: False, p1: 0, p2: 0, level: 5 False
+|  |  |  |  |  |  Number: 1440, Terminal: True, p1: 0, p2: 0, level: 6 True
+|  |  |  |  |  |  Number: 2160, Terminal: True, p1: 0, p2: 0, level: 6 True
+|  |  |  |  |  |  Number: 2880, Terminal: True, p1: 0, p2: 0, level: 6 True
+|  |  |  |  |  Number: 1080, Terminal: False, p1: 0, p2: 0, level: 5 False
+|  |  |  |  |  |  Number: 2160, Terminal: True, p1: 0, p2: 0, level: 6 True
+|  |  |  |  |  |  Number: 3240, Terminal: True, p1: 0, p2: 0, level: 6 True
+|  |  |  |  |  |  Number: 4320, Terminal: True, p1: 0, p2: 0, level: 6 True
+|  |  |  |  |  Number: 1440, Terminal: True, p1: 0, p2: 0, level: 5 True
+|  |  |  |  Number: 480, Terminal: False, p1: 0, p2: 0, level: 4 False
+|  |  |  |  |  Number: 960, Terminal: False, p1: 0, p2: 0, level: 5 False
+|  |  |  |  |  |  Number: 1920, Terminal: True, p1: 0, p2: 0, level: 6 True
+|  |  |  |  |  |  Number: 2880, Terminal: True, p1: 0, p2: 0, level: 6 True
+|  |  |  |  |  |  Number: 3840, Terminal: True, p1: 0, p2: 0, level: 6 True
+|  |  |  |  |  Number: 1440, Terminal: True, p1: 0, p2: 0, level: 5 True
+|  |  |  |  |  Number: 1920, Terminal: True, p1: 0, p2: 0, level: 5 True
+|  |  |  Number: 180, Terminal: False, p1: 0, p2: 0, level: 3 False
+|  |  |  |  Number: 360, Terminal: False, p1: 0, p2: 0, level: 4 False
+|  |  |  |  |  Number: 720, Terminal: False, p1: 0, p2: 0, level: 5 False
+|  |  |  |  |  |  Number: 1440, Terminal: True, p1: 0, p2: 0, level: 6 True
+|  |  |  |  |  |  Number: 2160, Terminal: True, p1: 0, p2: 0, level: 6 True
+|  |  |  |  |  |  Number: 2880, Terminal: True, p1: 0, p2: 0, level: 6 True
+|  |  |  |  |  Number: 1080, Terminal: False, p1: 0, p2: 0, level: 5 False
+|  |  |  |  |  |  Number: 2160, Terminal: True, p1: 0, p2: 0, level: 6 True
+|  |  |  |  |  |  Number: 3240, Terminal: True, p1: 0, p2: 0, level: 6 True
+|  |  |  |  |  |  Number: 4320, Terminal: True, p1: 0, p2: 0, level: 6 True
+|  |  |  |  |  Number: 1440, Terminal: True, p1: 0, p2: 0, level: 5 True
+|  |  |  |  Number: 540, Terminal: False, p1: 0, p2: 0, level: 4 False
+|  |  |  |  |  Number: 1080, Terminal: False, p1: 0, p2: 0, level: 5 False
+|  |  |  |  |  |  Number: 2160, Terminal: True, p1: 0, p2: 0, level: 6 True
+|  |  |  |  |  |  Number: 3240, Terminal: True, p1: 0, p2: 0, level: 6 True
+|  |  |  |  |  |  Number: 4320, Terminal: True, p1: 0, p2: 0, level: 6 True
+|  |  |  |  |  Number: 1620, Terminal: True, p1: 0, p2: 0, level: 5 True
+|  |  |  |  |  Number: 2160, Terminal: True, p1: 0, p2: 0, level: 5 True
+|  |  |  |  Number: 720, Terminal: False, p1: 0, p2: 0, level: 4 False
+|  |  |  |  |  Number: 1440, Terminal: True, p1: 0, p2: 0, level: 5 True
+|  |  |  |  |  Number: 2160, Terminal: True, p1: 0, p2: 0, level: 5 True
+|  |  |  |  |  Number: 2880, Terminal: True, p1: 0, p2: 0, level: 5 True
+|  |  |  Number: 240, Terminal: False, p1: 0, p2: 0, level: 3 False
+|  |  |  |  Number: 480, Terminal: False, p1: 0, p2: 0, level: 4 False
+|  |  |  |  |  Number: 960, Terminal: False, p1: 0, p2: 0, level: 5 False
+|  |  |  |  |  |  Number: 1920, Terminal: True, p1: 0, p2: 0, level: 6 True
+|  |  |  |  |  |  Number: 2880, Terminal: True, p1: 0, p2: 0, level: 6 True
+|  |  |  |  |  |  Number: 3840, Terminal: True, p1: 0, p2: 0, level: 6 True
+|  |  |  |  |  Number: 1440, Terminal: True, p1: 0, p2: 0, level: 5 True
+|  |  |  |  |  Number: 1920, Terminal: True, p1: 0, p2: 0, level: 5 True
+|  |  |  |  Number: 720, Terminal: False, p1: 0, p2: 0, level: 4 False
+|  |  |  |  |  Number: 1440, Terminal: True, p1: 0, p2: 0, level: 5 True
+|  |  |  |  |  Number: 2160, Terminal: True, p1: 0, p2: 0, level: 5 True
+|  |  |  |  |  Number: 2880, Terminal: True, p1: 0, p2: 0, level: 5 True
+|  |  |  |  Number: 960, Terminal: False, p1: 0, p2: 0, level: 4 False
+|  |  |  |  |  Number: 1920, Terminal: True, p1: 0, p2: 0, level: 5 True
+|  |  |  |  |  Number: 2880, Terminal: True, p1: 0, p2: 0, level: 5 True
+|  |  |  |  |  Number: 3840, Terminal: True, p1: 0, p2: 0, level: 5 True
+|  |  Number: 90, Terminal: False, p1: 0, p2: 0, level: 2 False
+|  |  |  Number: 180, Terminal: False, p1: 0, p2: 0, level: 3 False
+|  |  |  |  Number: 360, Terminal: False, p1: 0, p2: 0, level: 4 False
+|  |  |  |  |  Number: 720, Terminal: False, p1: 0, p2: 0, level: 5 False
+|  |  |  |  |  |  Number: 1440, Terminal: True, p1: 0, p2: 0, level: 6 True
+|  |  |  |  |  |  Number: 2160, Terminal: True, p1: 0, p2: 0, level: 6 True
+|  |  |  |  |  |  Number: 2880, Terminal: True, p1: 0, p2: 0, level: 6 True
+|  |  |  |  |  Number: 1080, Terminal: False, p1: 0, p2: 0, level: 5 False
+|  |  |  |  |  |  Number: 2160, Terminal: True, p1: 0, p2: 0, level: 6 True
+|  |  |  |  |  |  Number: 3240, Terminal: True, p1: 0, p2: 0, level: 6 True
+|  |  |  |  |  |  Number: 4320, Terminal: True, p1: 0, p2: 0, level: 6 True
+|  |  |  |  |  Number: 1440, Terminal: True, p1: 0, p2: 0, level: 5 True
+|  |  |  |  Number: 540, Terminal: False, p1: 0, p2: 0, level: 4 False
+|  |  |  |  |  Number: 1080, Terminal: False, p1: 0, p2: 0, level: 5 False
+|  |  |  |  |  |  Number: 2160, Terminal: True, p1: 0, p2: 0, level: 6 True
+|  |  |  |  |  |  Number: 3240, Terminal: True, p1: 0, p2: 0, level: 6 True
+|  |  |  |  |  |  Number: 4320, Terminal: True, p1: 0, p2: 0, level: 6 True
+|  |  |  |  |  Number: 1620, Terminal: True, p1: 0, p2: 0, level: 5 True
+|  |  |  |  |  Number: 2160, Terminal: True, p1: 0, p2: 0, level: 5 True
+|  |  |  |  Number: 720, Terminal: False, p1: 0, p2: 0, level: 4 False
+|  |  |  |  |  Number: 1440, Terminal: True, p1: 0, p2: 0, level: 5 True
+|  |  |  |  |  Number: 2160, Terminal: True, p1: 0, p2: 0, level: 5 True
+|  |  |  |  |  Number: 2880, Terminal: True, p1: 0, p2: 0, level: 5 True
+|  |  |  Number: 270, Terminal: False, p1: 0, p2: 0, level: 3 False
+|  |  |  |  Number: 540, Terminal: False, p1: 0, p2: 0, level: 4 False
+|  |  |  |  |  Number: 1080, Terminal: False, p1: 0, p2: 0, level: 5 False
+|  |  |  |  |  |  Number: 2160, Terminal: True, p1: 0, p2: 0, level: 6 True
+|  |  |  |  |  |  Number: 3240, Terminal: True, p1: 0, p2: 0, level: 6 True
+|  |  |  |  |  |  Number: 4320, Terminal: True, p1: 0, p2: 0, level: 6 True
+|  |  |  |  |  Number: 1620, Terminal: True, p1: 0, p2: 0, level: 5 True
+|  |  |  |  |  Number: 2160, Terminal: True, p1: 0, p2: 0, level: 5 True
+|  |  |  |  Number: 810, Terminal: False, p1: 0, p2: 0, level: 4 False
+|  |  |  |  |  Number: 1620, Terminal: True, p1: 0, p2: 0, level: 5 True
+|  |  |  |  |  Number: 2430, Terminal: True, p1: 0, p2: 0, level: 5 True
+|  |  |  |  |  Number: 3240, Terminal: True, p1: 0, p2: 0, level: 5 True
+|  |  |  |  Number: 1080, Terminal: False, p1: 0, p2: 0, level: 4 False
+|  |  |  |  |  Number: 2160, Terminal: True, p1: 0, p2: 0, level: 5 True
+|  |  |  |  |  Number: 3240, Terminal: True, p1: 0, p2: 0, level: 5 True
+|  |  |  |  |  Number: 4320, Terminal: True, p1: 0, p2: 0, level: 5 True
+|  |  |  Number: 360, Terminal: False, p1: 0, p2: 0, level: 3 False
+|  |  |  |  Number: 720, Terminal: False, p1: 0, p2: 0, level: 4 False
+|  |  |  |  |  Number: 1440, Terminal: True, p1: 0, p2: 0, level: 5 True
+|  |  |  |  |  Number: 2160, Terminal: True, p1: 0, p2: 0, level: 5 True
+|  |  |  |  |  Number: 2880, Terminal: True, p1: 0, p2: 0, level: 5 True
+|  |  |  |  Number: 1080, Terminal: False, p1: 0, p2: 0, level: 4 False
+|  |  |  |  |  Number: 2160, Terminal: True, p1: 0, p2: 0, level: 5 True
+|  |  |  |  |  Number: 3240, Terminal: True, p1: 0, p2: 0, level: 5 True
+|  |  |  |  |  Number: 4320, Terminal: True, p1: 0, p2: 0, level: 5 True
+|  |  |  |  Number: 1440, Terminal: True, p1: 0, p2: 0, level: 4 True
+|  |  Number: 120, Terminal: False, p1: 0, p2: 0, level: 2 False
+|  |  |  Number: 240, Terminal: False, p1: 0, p2: 0, level: 3 False
+|  |  |  |  Number: 480, Terminal: False, p1: 0, p2: 0, level: 4 False
+|  |  |  |  |  Number: 960, Terminal: False, p1: 0, p2: 0, level: 5 False
+|  |  |  |  |  |  Number: 1920, Terminal: True, p1: 0, p2: 0, level: 6 True
+|  |  |  |  |  |  Number: 2880, Terminal: True, p1: 0, p2: 0, level: 6 True
+|  |  |  |  |  |  Number: 3840, Terminal: True, p1: 0, p2: 0, level: 6 True
+|  |  |  |  |  Number: 1440, Terminal: True, p1: 0, p2: 0, level: 5 True
+|  |  |  |  |  Number: 1920, Terminal: True, p1: 0, p2: 0, level: 5 True
+|  |  |  |  Number: 720, Terminal: False, p1: 0, p2: 0, level: 4 False
+|  |  |  |  |  Number: 1440, Terminal: True, p1: 0, p2: 0, level: 5 True
+|  |  |  |  |  Number: 2160, Terminal: True, p1: 0, p2: 0, level: 5 True
+|  |  |  |  |  Number: 2880, Terminal: True, p1: 0, p2: 0, level: 5 True
+|  |  |  |  Number: 960, Terminal: False, p1: 0, p2: 0, level: 4 False
+|  |  |  |  |  Number: 1920, Terminal: True, p1: 0, p2: 0, level: 5 True
+|  |  |  |  |  Number: 2880, Terminal: True, p1: 0, p2: 0, level: 5 True
+|  |  |  |  |  Number: 3840, Terminal: True, p1: 0, p2: 0, level: 5 True
+|  |  |  Number: 360, Terminal: False, p1: 0, p2: 0, level: 3 False
+|  |  |  |  Number: 720, Terminal: False, p1: 0, p2: 0, level: 4 False
+|  |  |  |  |  Number: 1440, Terminal: True, p1: 0, p2: 0, level: 5 True
+|  |  |  |  |  Number: 2160, Terminal: True, p1: 0, p2: 0, level: 5 True
+|  |  |  |  |  Number: 2880, Terminal: True, p1: 0, p2: 0, level: 5 True
+|  |  |  |  Number: 1080, Terminal: False, p1: 0, p2: 0, level: 4 False
+|  |  |  |  |  Number: 2160, Terminal: True, p1: 0, p2: 0, level: 5 True
+|  |  |  |  |  Number: 3240, Terminal: True, p1: 0, p2: 0, level: 5 True
+|  |  |  |  |  Number: 4320, Terminal: True, p1: 0, p2: 0, level: 5 True
+|  |  |  |  Number: 1440, Terminal: True, p1: 0, p2: 0, level: 4 True
+|  |  |  Number: 480, Terminal: False, p1: 0, p2: 0, level: 3 False
+|  |  |  |  Number: 960, Terminal: False, p1: 0, p2: 0, level: 4 False
+|  |  |  |  |  Number: 1920, Terminal: True, p1: 0, p2: 0, level: 5 True
+|  |  |  |  |  Number: 2880, Terminal: True, p1: 0, p2: 0, level: 5 True
+|  |  |  |  |  Number: 3840, Terminal: True, p1: 0, p2: 0, level: 5 True
+|  |  |  |  Number: 1440, Terminal: True, p1: 0, p2: 0, level: 4 True
+|  |  |  |  Number: 1920, Terminal: True, p1: 0, p2: 0, level: 4 True
+|  Number: 40, Terminal: False, p1: 0, p2: 0, level: 1 False
+|  |  Number: 80, Terminal: False, p1: 0, p2: 0, level: 2 False
+|  |  |  Number: 160, Terminal: False, p1: 0, p2: 0, level: 3 False
+|  |  |  |  Number: 320, Terminal: False, p1: 0, p2: 0, level: 4 False
+|  |  |  |  |  Number: 640, Terminal: False, p1: 0, p2: 0, level: 5 False
+|  |  |  |  |  |  Number: 1280, Terminal: True, p1: 0, p2: 0, level: 6 True
+|  |  |  |  |  |  Number: 1920, Terminal: True, p1: 0, p2: 0, level: 6 True
+|  |  |  |  |  |  Number: 2560, Terminal: True, p1: 0, p2: 0, level: 6 True
+|  |  |  |  |  Number: 960, Terminal: False, p1: 0, p2: 0, level: 5 False
+|  |  |  |  |  |  Number: 1920, Terminal: True, p1: 0, p2: 0, level: 6 True
+|  |  |  |  |  |  Number: 2880, Terminal: True, p1: 0, p2: 0, level: 6 True
+|  |  |  |  |  |  Number: 3840, Terminal: True, p1: 0, p2: 0, level: 6 True
+|  |  |  |  |  Number: 1280, Terminal: True, p1: 0, p2: 0, level: 5 True
+|  |  |  |  Number: 480, Terminal: False, p1: 0, p2: 0, level: 4 False
+|  |  |  |  |  Number: 960, Terminal: False, p1: 0, p2: 0, level: 5 False
+|  |  |  |  |  |  Number: 1920, Terminal: True, p1: 0, p2: 0, level: 6 True
+|  |  |  |  |  |  Number: 2880, Terminal: True, p1: 0, p2: 0, level: 6 True
+|  |  |  |  |  |  Number: 3840, Terminal: True, p1: 0, p2: 0, level: 6 True
+|  |  |  |  |  Number: 1440, Terminal: True, p1: 0, p2: 0, level: 5 True
+|  |  |  |  |  Number: 1920, Terminal: True, p1: 0, p2: 0, level: 5 True
+|  |  |  |  Number: 640, Terminal: False, p1: 0, p2: 0, level: 4 False
+|  |  |  |  |  Number: 1280, Terminal: True, p1: 0, p2: 0, level: 5 True
+|  |  |  |  |  Number: 1920, Terminal: True, p1: 0, p2: 0, level: 5 True
+|  |  |  |  |  Number: 2560, Terminal: True, p1: 0, p2: 0, level: 5 True
+|  |  |  Number: 240, Terminal: False, p1: 0, p2: 0, level: 3 False
+|  |  |  |  Number: 480, Terminal: False, p1: 0, p2: 0, level: 4 False
+|  |  |  |  |  Number: 960, Terminal: False, p1: 0, p2: 0, level: 5 False
+|  |  |  |  |  |  Number: 1920, Terminal: True, p1: 0, p2: 0, level: 6 True
+|  |  |  |  |  |  Number: 2880, Terminal: True, p1: 0, p2: 0, level: 6 True
+|  |  |  |  |  |  Number: 3840, Terminal: True, p1: 0, p2: 0, level: 6 True
+|  |  |  |  |  Number: 1440, Terminal: True, p1: 0, p2: 0, level: 5 True
+|  |  |  |  |  Number: 1920, Terminal: True, p1: 0, p2: 0, level: 5 True
+|  |  |  |  Number: 720, Terminal: False, p1: 0, p2: 0, level: 4 False
+|  |  |  |  |  Number: 1440, Terminal: True, p1: 0, p2: 0, level: 5 True
+|  |  |  |  |  Number: 2160, Terminal: True, p1: 0, p2: 0, level: 5 True
+|  |  |  |  |  Number: 2880, Terminal: True, p1: 0, p2: 0, level: 5 True
+|  |  |  |  Number: 960, Terminal: False, p1: 0, p2: 0, level: 4 False
+|  |  |  |  |  Number: 1920, Terminal: True, p1: 0, p2: 0, level: 5 True
+|  |  |  |  |  Number: 2880, Terminal: True, p1: 0, p2: 0, level: 5 True
+|  |  |  |  |  Number: 3840, Terminal: True, p1: 0, p2: 0, level: 5 True
+|  |  |  Number: 320, Terminal: False, p1: 0, p2: 0, level: 3 False
+|  |  |  |  Number: 640, Terminal: False, p1: 0, p2: 0, level: 4 False
+|  |  |  |  |  Number: 1280, Terminal: True, p1: 0, p2: 0, level: 5 True
+|  |  |  |  |  Number: 1920, Terminal: True, p1: 0, p2: 0, level: 5 True
+|  |  |  |  |  Number: 2560, Terminal: True, p1: 0, p2: 0, level: 5 True
+|  |  |  |  Number: 960, Terminal: False, p1: 0, p2: 0, level: 4 False
+|  |  |  |  |  Number: 1920, Terminal: True, p1: 0, p2: 0, level: 5 True
+|  |  |  |  |  Number: 2880, Terminal: True, p1: 0, p2: 0, level: 5 True
+|  |  |  |  |  Number: 3840, Terminal: True, p1: 0, p2: 0, level: 5 True
+|  |  |  |  Number: 1280, Terminal: True, p1: 0, p2: 0, level: 4 True
+|  |  Number: 120, Terminal: False, p1: 0, p2: 0, level: 2 False
+|  |  |  Number: 240, Terminal: False, p1: 0, p2: 0, level: 3 False
+|  |  |  |  Number: 480, Terminal: False, p1: 0, p2: 0, level: 4 False
+|  |  |  |  |  Number: 960, Terminal: False, p1: 0, p2: 0, level: 5 False
+|  |  |  |  |  |  Number: 1920, Terminal: True, p1: 0, p2: 0, level: 6 True
+|  |  |  |  |  |  Number: 2880, Terminal: True, p1: 0, p2: 0, level: 6 True
+|  |  |  |  |  |  Number: 3840, Terminal: True, p1: 0, p2: 0, level: 6 True
+|  |  |  |  |  Number: 1440, Terminal: True, p1: 0, p2: 0, level: 5 True
+|  |  |  |  |  Number: 1920, Terminal: True, p1: 0, p2: 0, level: 5 True
+|  |  |  |  Number: 720, Terminal: False, p1: 0, p2: 0, level: 4 False
+|  |  |  |  |  Number: 1440, Terminal: True, p1: 0, p2: 0, level: 5 True
+|  |  |  |  |  Number: 2160, Terminal: True, p1: 0, p2: 0, level: 5 True
+|  |  |  |  |  Number: 2880, Terminal: True, p1: 0, p2: 0, level: 5 True
+|  |  |  |  Number: 960, Terminal: False, p1: 0, p2: 0, level: 4 False
+|  |  |  |  |  Number: 1920, Terminal: True, p1: 0, p2: 0, level: 5 True
+|  |  |  |  |  Number: 2880, Terminal: True, p1: 0, p2: 0, level: 5 True
+|  |  |  |  |  Number: 3840, Terminal: True, p1: 0, p2: 0, level: 5 True
+|  |  |  Number: 360, Terminal: False, p1: 0, p2: 0, level: 3 False
+|  |  |  |  Number: 720, Terminal: False, p1: 0, p2: 0, level: 4 False
+|  |  |  |  |  Number: 1440, Terminal: True, p1: 0, p2: 0, level: 5 True
+|  |  |  |  |  Number: 2160, Terminal: True, p1: 0, p2: 0, level: 5 True
+|  |  |  |  |  Number: 2880, Terminal: True, p1: 0, p2: 0, level: 5 True
+|  |  |  |  Number: 1080, Terminal: False, p1: 0, p2: 0, level: 4 False
+|  |  |  |  |  Number: 2160, Terminal: True, p1: 0, p2: 0, level: 5 True
+|  |  |  |  |  Number: 3240, Terminal: True, p1: 0, p2: 0, level: 5 True
+|  |  |  |  |  Number: 4320, Terminal: True, p1: 0, p2: 0, level: 5 True
+|  |  |  |  Number: 1440, Terminal: True, p1: 0, p2: 0, level: 4 True
+|  |  |  Number: 480, Terminal: False, p1: 0, p2: 0, level: 3 False
+|  |  |  |  Number: 960, Terminal: False, p1: 0, p2: 0, level: 4 False
+|  |  |  |  |  Number: 1920, Terminal: True, p1: 0, p2: 0, level: 5 True
+|  |  |  |  |  Number: 2880, Terminal: True, p1: 0, p2: 0, level: 5 True
+|  |  |  |  |  Number: 3840, Terminal: True, p1: 0, p2: 0, level: 5 True
+|  |  |  |  Number: 1440, Terminal: True, p1: 0, p2: 0, level: 4 True
+|  |  |  |  Number: 1920, Terminal: True, p1: 0, p2: 0, level: 4 True
+|  |  Number: 160, Terminal: False, p1: 0, p2: 0, level: 2 False
+|  |  |  Number: 320, Terminal: False, p1: 0, p2: 0, level: 3 False
+|  |  |  |  Number: 640, Terminal: False, p1: 0, p2: 0, level: 4 False
+|  |  |  |  |  Number: 1280, Terminal: True, p1: 0, p2: 0, level: 5 True
+|  |  |  |  |  Number: 1920, Terminal: True, p1: 0, p2: 0, level: 5 True
+|  |  |  |  |  Number: 2560, Terminal: True, p1: 0, p2: 0, level: 5 True
+|  |  |  |  Number: 960, Terminal: False, p1: 0, p2: 0, level: 4 False
+|  |  |  |  |  Number: 1920, Terminal: True, p1: 0, p2: 0, level: 5 True
+|  |  |  |  |  Number: 2880, Terminal: True, p1: 0, p2: 0, level: 5 True
+|  |  |  |  |  Number: 3840, Terminal: True, p1: 0, p2: 0, level: 5 True
+|  |  |  |  Number: 1280, Terminal: True, p1: 0, p2: 0, level: 4 True
+|  |  |  Number: 480, Terminal: False, p1: 0, p2: 0, level: 3 False
+|  |  |  |  Number: 960, Terminal: False, p1: 0, p2: 0, level: 4 False
+|  |  |  |  |  Number: 1920, Terminal: True, p1: 0, p2: 0, level: 5 True
+|  |  |  |  |  Number: 2880, Terminal: True, p1: 0, p2: 0, level: 5 True
+|  |  |  |  |  Number: 3840, Terminal: True, p1: 0, p2: 0, level: 5 True
+|  |  |  |  Number: 1440, Terminal: True, p1: 0, p2: 0, level: 4 True
+|  |  |  |  Number: 1920, Terminal: True, p1: 0, p2: 0, level: 4 True
+|  |  |  Number: 640, Terminal: False, p1: 0, p2: 0, level: 3 False
+|  |  |  |  Number: 1280, Terminal: True, p1: 0, p2: 0, level: 4 True
+|  |  |  |  Number: 1920, Terminal: True, p1: 0, p2: 0, level: 4 True
+|  |  |  |  Number: 2560, Terminal: True, p1: 0, p2: 0, level: 4 True

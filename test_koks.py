@@ -7,6 +7,8 @@ i=0 # testam
 class Node:
     # p1 goes first
     def __init__(self, number: int, p1: Optional[int] = 0, p2: Optional[int] = 0, level: Optional[int] = 0, is_terminal: Optional[bool] = False, parent: Optional["Node"] = None):
+        global i # testam
+        i = i+1 # testam
         self.p1: int = p1
         self.p2: int = p2
         self.children: List[Node] = []
@@ -16,8 +18,6 @@ class Node:
         self.level: int = level
 
     def expand(self):
-        global i # testam
-        i = i+1 # testam
         for multiplier in [2, 3, 4]:
             new_number = self.number * multiplier
 

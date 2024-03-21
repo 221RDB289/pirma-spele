@@ -1,0 +1,327 @@
+Number: 9, Terminal: False, p1: 0, p2: 0, level: 0
+|  Number: 18, Terminal: False, p1: 0, p2: 0, level: 1
+|  |  Number: 36, Terminal: False, p1: 0, p2: 0, level: 2
+|  |  |  Number: 72, Terminal: False, p1: 0, p2: 0, level: 3
+|  |  |  |  Number: 144, Terminal: False, p1: 0, p2: 0, level: 4
+|  |  |  |  |  Number: 288, Terminal: False, p1: 0, p2: 0, level: 5
+|  |  |  |  |  |  Number: 576, Terminal: False, p1: 0, p2: 0, level: 6
+|  |  |  |  |  |  |  Number: 1152, Terminal: False, p1: 0, p2: 0, level: 7
+|  |  |  |  |  |  |  |  Number: 2304, Terminal: True, p1: 0, p2: 0, level: 8
+|  |  |  |  |  |  |  Number: 1728, Terminal: True, p1: 0, p2: 0, level: 7
+|  |  |  |  |  |  Number: 864, Terminal: False, p1: 0, p2: 0, level: 6
+|  |  |  |  |  |  |  Number: 1728, Terminal: True, p1: 0, p2: 0, level: 7
+|  |  |  |  |  |  Number: 1152, Terminal: False, p1: 0, p2: 0, level: 6
+|  |  |  |  |  |  |  Number: 2304, Terminal: True, p1: 0, p2: 0, level: 7
+|  |  |  |  |  Number: 432, Terminal: False, p1: 0, p2: 0, level: 5
+|  |  |  |  |  |  Number: 864, Terminal: False, p1: 0, p2: 0, level: 6
+|  |  |  |  |  |  |  Number: 1728, Terminal: True, p1: 0, p2: 0, level: 7
+|  |  |  |  |  |  Number: 1296, Terminal: True, p1: 0, p2: 0, level: 6
+|  |  |  |  |  Number: 576, Terminal: False, p1: 0, p2: 0, level: 5
+|  |  |  |  |  |  Number: 1152, Terminal: False, p1: 0, p2: 0, level: 6
+|  |  |  |  |  |  |  Number: 2304, Terminal: True, p1: 0, p2: 0, level: 7
+|  |  |  |  |  |  Number: 1728, Terminal: True, p1: 0, p2: 0, level: 6
+|  |  |  |  Number: 216, Terminal: False, p1: 0, p2: 0, level: 4
+|  |  |  |  |  Number: 432, Terminal: False, p1: 0, p2: 0, level: 5
+|  |  |  |  |  |  Number: 864, Terminal: False, p1: 0, p2: 0, level: 6
+|  |  |  |  |  |  |  Number: 1728, Terminal: True, p1: 0, p2: 0, level: 7
+|  |  |  |  |  |  Number: 1296, Terminal: True, p1: 0, p2: 0, level: 6
+|  |  |  |  |  Number: 648, Terminal: False, p1: 0, p2: 0, level: 5
+|  |  |  |  |  |  Number: 1296, Terminal: True, p1: 0, p2: 0, level: 6
+|  |  |  |  |  Number: 864, Terminal: False, p1: 0, p2: 0, level: 5
+|  |  |  |  |  |  Number: 1728, Terminal: True, p1: 0, p2: 0, level: 6
+|  |  |  |  Number: 288, Terminal: False, p1: 0, p2: 0, level: 4
+|  |  |  |  |  Number: 576, Terminal: False, p1: 0, p2: 0, level: 5
+|  |  |  |  |  |  Number: 1152, Terminal: False, p1: 0, p2: 0, level: 6
+|  |  |  |  |  |  |  Number: 2304, Terminal: True, p1: 0, p2: 0, level: 7
+|  |  |  |  |  |  Number: 1728, Terminal: True, p1: 0, p2: 0, level: 6
+|  |  |  |  |  Number: 864, Terminal: False, p1: 0, p2: 0, level: 5
+|  |  |  |  |  |  Number: 1728, Terminal: True, p1: 0, p2: 0, level: 6
+|  |  |  |  |  Number: 1152, Terminal: False, p1: 0, p2: 0, level: 5
+|  |  |  |  |  |  Number: 2304, Terminal: True, p1: 0, p2: 0, level: 6
+|  |  |  Number: 108, Terminal: False, p1: 0, p2: 0, level: 3
+|  |  |  |  Number: 216, Terminal: False, p1: 0, p2: 0, level: 4
+|  |  |  |  |  Number: 432, Terminal: False, p1: 0, p2: 0, level: 5
+|  |  |  |  |  |  Number: 864, Terminal: False, p1: 0, p2: 0, level: 6
+|  |  |  |  |  |  |  Number: 1728, Terminal: True, p1: 0, p2: 0, level: 7
+|  |  |  |  |  |  Number: 1296, Terminal: True, p1: 0, p2: 0, level: 6
+|  |  |  |  |  Number: 648, Terminal: False, p1: 0, p2: 0, level: 5
+|  |  |  |  |  |  Number: 1296, Terminal: True, p1: 0, p2: 0, level: 6
+|  |  |  |  |  Number: 864, Terminal: False, p1: 0, p2: 0, level: 5
+|  |  |  |  |  |  Number: 1728, Terminal: True, p1: 0, p2: 0, level: 6
+|  |  |  |  Number: 324, Terminal: False, p1: 0, p2: 0, level: 4
+|  |  |  |  |  Number: 648, Terminal: False, p1: 0, p2: 0, level: 5
+|  |  |  |  |  |  Number: 1296, Terminal: True, p1: 0, p2: 0, level: 6
+|  |  |  |  |  Number: 972, Terminal: False, p1: 0, p2: 0, level: 5
+|  |  |  |  |  |  Number: 1944, Terminal: True, p1: 0, p2: 0, level: 6
+|  |  |  |  |  Number: 1296, Terminal: True, p1: 0, p2: 0, level: 5
+|  |  |  |  Number: 432, Terminal: False, p1: 0, p2: 0, level: 4
+|  |  |  |  |  Number: 864, Terminal: False, p1: 0, p2: 0, level: 5
+|  |  |  |  |  |  Number: 1728, Terminal: True, p1: 0, p2: 0, level: 6
+|  |  |  |  |  Number: 1296, Terminal: True, p1: 0, p2: 0, level: 5
+|  |  |  Number: 144, Terminal: False, p1: 0, p2: 0, level: 3
+|  |  |  |  Number: 288, Terminal: False, p1: 0, p2: 0, level: 4
+|  |  |  |  |  Number: 576, Terminal: False, p1: 0, p2: 0, level: 5
+|  |  |  |  |  |  Number: 1152, Terminal: False, p1: 0, p2: 0, level: 6
+|  |  |  |  |  |  |  Number: 2304, Terminal: True, p1: 0, p2: 0, level: 7
+|  |  |  |  |  |  Number: 1728, Terminal: True, p1: 0, p2: 0, level: 6
+|  |  |  |  |  Number: 864, Terminal: False, p1: 0, p2: 0, level: 5
+|  |  |  |  |  |  Number: 1728, Terminal: True, p1: 0, p2: 0, level: 6
+|  |  |  |  |  Number: 1152, Terminal: False, p1: 0, p2: 0, level: 5
+|  |  |  |  |  |  Number: 2304, Terminal: True, p1: 0, p2: 0, level: 6
+|  |  |  |  Number: 432, Terminal: False, p1: 0, p2: 0, level: 4
+|  |  |  |  |  Number: 864, Terminal: False, p1: 0, p2: 0, level: 5
+|  |  |  |  |  |  Number: 1728, Terminal: True, p1: 0, p2: 0, level: 6
+|  |  |  |  |  Number: 1296, Terminal: True, p1: 0, p2: 0, level: 5
+|  |  |  |  Number: 576, Terminal: False, p1: 0, p2: 0, level: 4
+|  |  |  |  |  Number: 1152, Terminal: False, p1: 0, p2: 0, level: 5
+|  |  |  |  |  |  Number: 2304, Terminal: True, p1: 0, p2: 0, level: 6
+|  |  |  |  |  Number: 1728, Terminal: True, p1: 0, p2: 0, level: 5
+|  |  Number: 54, Terminal: False, p1: 0, p2: 0, level: 2
+|  |  |  Number: 108, Terminal: False, p1: 0, p2: 0, level: 3
+|  |  |  |  Number: 216, Terminal: False, p1: 0, p2: 0, level: 4
+|  |  |  |  |  Number: 432, Terminal: False, p1: 0, p2: 0, level: 5
+|  |  |  |  |  |  Number: 864, Terminal: False, p1: 0, p2: 0, level: 6
+|  |  |  |  |  |  |  Number: 1728, Terminal: True, p1: 0, p2: 0, level: 7
+|  |  |  |  |  |  Number: 1296, Terminal: True, p1: 0, p2: 0, level: 6
+|  |  |  |  |  Number: 648, Terminal: False, p1: 0, p2: 0, level: 5
+|  |  |  |  |  |  Number: 1296, Terminal: True, p1: 0, p2: 0, level: 6
+|  |  |  |  |  Number: 864, Terminal: False, p1: 0, p2: 0, level: 5
+|  |  |  |  |  |  Number: 1728, Terminal: True, p1: 0, p2: 0, level: 6
+|  |  |  |  Number: 324, Terminal: False, p1: 0, p2: 0, level: 4
+|  |  |  |  |  Number: 648, Terminal: False, p1: 0, p2: 0, level: 5
+|  |  |  |  |  |  Number: 1296, Terminal: True, p1: 0, p2: 0, level: 6
+|  |  |  |  |  Number: 972, Terminal: False, p1: 0, p2: 0, level: 5
+|  |  |  |  |  |  Number: 1944, Terminal: True, p1: 0, p2: 0, level: 6
+|  |  |  |  |  Number: 1296, Terminal: True, p1: 0, p2: 0, level: 5
+|  |  |  |  Number: 432, Terminal: False, p1: 0, p2: 0, level: 4
+|  |  |  |  |  Number: 864, Terminal: False, p1: 0, p2: 0, level: 5
+|  |  |  |  |  |  Number: 1728, Terminal: True, p1: 0, p2: 0, level: 6
+|  |  |  |  |  Number: 1296, Terminal: True, p1: 0, p2: 0, level: 5
+|  |  |  Number: 162, Terminal: False, p1: 0, p2: 0, level: 3
+|  |  |  |  Number: 324, Terminal: False, p1: 0, p2: 0, level: 4
+|  |  |  |  |  Number: 648, Terminal: False, p1: 0, p2: 0, level: 5
+|  |  |  |  |  |  Number: 1296, Terminal: True, p1: 0, p2: 0, level: 6
+|  |  |  |  |  Number: 972, Terminal: False, p1: 0, p2: 0, level: 5
+|  |  |  |  |  |  Number: 1944, Terminal: True, p1: 0, p2: 0, level: 6
+|  |  |  |  |  Number: 1296, Terminal: True, p1: 0, p2: 0, level: 5
+|  |  |  |  Number: 486, Terminal: False, p1: 0, p2: 0, level: 4
+|  |  |  |  |  Number: 972, Terminal: False, p1: 0, p2: 0, level: 5
+|  |  |  |  |  |  Number: 1944, Terminal: True, p1: 0, p2: 0, level: 6
+|  |  |  |  |  Number: 1458, Terminal: True, p1: 0, p2: 0, level: 5
+|  |  |  |  Number: 648, Terminal: False, p1: 0, p2: 0, level: 4
+|  |  |  |  |  Number: 1296, Terminal: True, p1: 0, p2: 0, level: 5
+|  |  |  Number: 216, Terminal: False, p1: 0, p2: 0, level: 3
+|  |  |  |  Number: 432, Terminal: False, p1: 0, p2: 0, level: 4
+|  |  |  |  |  Number: 864, Terminal: False, p1: 0, p2: 0, level: 5
+|  |  |  |  |  |  Number: 1728, Terminal: True, p1: 0, p2: 0, level: 6
+|  |  |  |  |  Number: 1296, Terminal: True, p1: 0, p2: 0, level: 5
+|  |  |  |  Number: 648, Terminal: False, p1: 0, p2: 0, level: 4
+|  |  |  |  |  Number: 1296, Terminal: True, p1: 0, p2: 0, level: 5
+|  |  |  |  Number: 864, Terminal: False, p1: 0, p2: 0, level: 4
+|  |  |  |  |  Number: 1728, Terminal: True, p1: 0, p2: 0, level: 5
+|  |  Number: 72, Terminal: False, p1: 0, p2: 0, level: 2
+|  |  |  Number: 144, Terminal: False, p1: 0, p2: 0, level: 3
+|  |  |  |  Number: 288, Terminal: False, p1: 0, p2: 0, level: 4
+|  |  |  |  |  Number: 576, Terminal: False, p1: 0, p2: 0, level: 5
+|  |  |  |  |  |  Number: 1152, Terminal: False, p1: 0, p2: 0, level: 6
+|  |  |  |  |  |  |  Number: 2304, Terminal: True, p1: 0, p2: 0, level: 7
+|  |  |  |  |  |  Number: 1728, Terminal: True, p1: 0, p2: 0, level: 6
+|  |  |  |  |  Number: 864, Terminal: False, p1: 0, p2: 0, level: 5
+|  |  |  |  |  |  Number: 1728, Terminal: True, p1: 0, p2: 0, level: 6
+|  |  |  |  |  Number: 1152, Terminal: False, p1: 0, p2: 0, level: 5
+|  |  |  |  |  |  Number: 2304, Terminal: True, p1: 0, p2: 0, level: 6
+|  |  |  |  Number: 432, Terminal: False, p1: 0, p2: 0, level: 4
+|  |  |  |  |  Number: 864, Terminal: False, p1: 0, p2: 0, level: 5
+|  |  |  |  |  |  Number: 1728, Terminal: True, p1: 0, p2: 0, level: 6
+|  |  |  |  |  Number: 1296, Terminal: True, p1: 0, p2: 0, level: 5
+|  |  |  |  Number: 576, Terminal: False, p1: 0, p2: 0, level: 4
+|  |  |  |  |  Number: 1152, Terminal: False, p1: 0, p2: 0, level: 5
+|  |  |  |  |  |  Number: 2304, Terminal: True, p1: 0, p2: 0, level: 6
+|  |  |  |  |  Number: 1728, Terminal: True, p1: 0, p2: 0, level: 5
+|  |  |  Number: 216, Terminal: False, p1: 0, p2: 0, level: 3
+|  |  |  |  Number: 432, Terminal: False, p1: 0, p2: 0, level: 4
+|  |  |  |  |  Number: 864, Terminal: False, p1: 0, p2: 0, level: 5
+|  |  |  |  |  |  Number: 1728, Terminal: True, p1: 0, p2: 0, level: 6
+|  |  |  |  |  Number: 1296, Terminal: True, p1: 0, p2: 0, level: 5
+|  |  |  |  Number: 648, Terminal: False, p1: 0, p2: 0, level: 4
+|  |  |  |  |  Number: 1296, Terminal: True, p1: 0, p2: 0, level: 5
+|  |  |  |  Number: 864, Terminal: False, p1: 0, p2: 0, level: 4
+|  |  |  |  |  Number: 1728, Terminal: True, p1: 0, p2: 0, level: 5
+|  |  |  Number: 288, Terminal: False, p1: 0, p2: 0, level: 3
+|  |  |  |  Number: 576, Terminal: False, p1: 0, p2: 0, level: 4
+|  |  |  |  |  Number: 1152, Terminal: False, p1: 0, p2: 0, level: 5
+|  |  |  |  |  |  Number: 2304, Terminal: True, p1: 0, p2: 0, level: 6
+|  |  |  |  |  Number: 1728, Terminal: True, p1: 0, p2: 0, level: 5
+|  |  |  |  Number: 864, Terminal: False, p1: 0, p2: 0, level: 4
+|  |  |  |  |  Number: 1728, Terminal: True, p1: 0, p2: 0, level: 5
+|  |  |  |  Number: 1152, Terminal: False, p1: 0, p2: 0, level: 4
+|  |  |  |  |  Number: 2304, Terminal: True, p1: 0, p2: 0, level: 5
+|  Number: 27, Terminal: False, p1: 1, p2: 0, level: 1
+|  |  Number: 54, Terminal: False, p1: 0, p2: 0, level: 2
+|  |  |  Number: 108, Terminal: False, p1: 0, p2: 0, level: 3
+|  |  |  |  Number: 216, Terminal: False, p1: 0, p2: 0, level: 4
+|  |  |  |  |  Number: 432, Terminal: False, p1: 0, p2: 0, level: 5
+|  |  |  |  |  |  Number: 864, Terminal: False, p1: 0, p2: 0, level: 6
+|  |  |  |  |  |  |  Number: 1728, Terminal: True, p1: 0, p2: 0, level: 7
+|  |  |  |  |  |  Number: 1296, Terminal: True, p1: 0, p2: 0, level: 6
+|  |  |  |  |  Number: 648, Terminal: False, p1: 0, p2: 0, level: 5
+|  |  |  |  |  |  Number: 1296, Terminal: True, p1: 0, p2: 0, level: 6
+|  |  |  |  |  Number: 864, Terminal: False, p1: 0, p2: 0, level: 5
+|  |  |  |  |  |  Number: 1728, Terminal: True, p1: 0, p2: 0, level: 6
+|  |  |  |  Number: 324, Terminal: False, p1: 0, p2: 0, level: 4
+|  |  |  |  |  Number: 648, Terminal: False, p1: 0, p2: 0, level: 5
+|  |  |  |  |  |  Number: 1296, Terminal: True, p1: 0, p2: 0, level: 6
+|  |  |  |  |  Number: 972, Terminal: False, p1: 0, p2: 0, level: 5
+|  |  |  |  |  |  Number: 1944, Terminal: True, p1: 0, p2: 0, level: 6
+|  |  |  |  |  Number: 1296, Terminal: True, p1: 0, p2: 0, level: 5
+|  |  |  |  Number: 432, Terminal: False, p1: 0, p2: 0, level: 4
+|  |  |  |  |  Number: 864, Terminal: False, p1: 0, p2: 0, level: 5
+|  |  |  |  |  |  Number: 1728, Terminal: True, p1: 0, p2: 0, level: 6
+|  |  |  |  |  Number: 1296, Terminal: True, p1: 0, p2: 0, level: 5
+|  |  |  Number: 162, Terminal: False, p1: 0, p2: 0, level: 3
+|  |  |  |  Number: 324, Terminal: False, p1: 0, p2: 0, level: 4
+|  |  |  |  |  Number: 648, Terminal: False, p1: 0, p2: 0, level: 5
+|  |  |  |  |  |  Number: 1296, Terminal: True, p1: 0, p2: 0, level: 6
+|  |  |  |  |  Number: 972, Terminal: False, p1: 0, p2: 0, level: 5
+|  |  |  |  |  |  Number: 1944, Terminal: True, p1: 0, p2: 0, level: 6
+|  |  |  |  |  Number: 1296, Terminal: True, p1: 0, p2: 0, level: 5
+|  |  |  |  Number: 486, Terminal: False, p1: 0, p2: 0, level: 4
+|  |  |  |  |  Number: 972, Terminal: False, p1: 0, p2: 0, level: 5
+|  |  |  |  |  |  Number: 1944, Terminal: True, p1: 0, p2: 0, level: 6
+|  |  |  |  |  Number: 1458, Terminal: True, p1: 0, p2: 0, level: 5
+|  |  |  |  Number: 648, Terminal: False, p1: 0, p2: 0, level: 4
+|  |  |  |  |  Number: 1296, Terminal: True, p1: 0, p2: 0, level: 5
+|  |  |  Number: 216, Terminal: False, p1: 0, p2: 0, level: 3
+|  |  |  |  Number: 432, Terminal: False, p1: 0, p2: 0, level: 4
+|  |  |  |  |  Number: 864, Terminal: False, p1: 0, p2: 0, level: 5
+|  |  |  |  |  |  Number: 1728, Terminal: True, p1: 0, p2: 0, level: 6
+|  |  |  |  |  Number: 1296, Terminal: True, p1: 0, p2: 0, level: 5
+|  |  |  |  Number: 648, Terminal: False, p1: 0, p2: 0, level: 4
+|  |  |  |  |  Number: 1296, Terminal: True, p1: 0, p2: 0, level: 5
+|  |  |  |  Number: 864, Terminal: False, p1: 0, p2: 0, level: 4
+|  |  |  |  |  Number: 1728, Terminal: True, p1: 0, p2: 0, level: 5
+|  |  Number: 81, Terminal: False, p1: 1, p2: 1, level: 2
+|  |  |  Number: 162, Terminal: False, p1: 1, p2: 0, level: 3
+|  |  |  |  Number: 324, Terminal: False, p1: 0, p2: 0, level: 4
+|  |  |  |  |  Number: 648, Terminal: False, p1: 0, p2: 0, level: 5
+|  |  |  |  |  |  Number: 1296, Terminal: True, p1: 0, p2: 0, level: 6
+|  |  |  |  |  Number: 972, Terminal: False, p1: 0, p2: 0, level: 5
+|  |  |  |  |  |  Number: 1944, Terminal: True, p1: 0, p2: 0, level: 6
+|  |  |  |  |  Number: 1296, Terminal: True, p1: 0, p2: 0, level: 5
+|  |  |  |  Number: 486, Terminal: False, p1: 0, p2: 0, level: 4
+|  |  |  |  |  Number: 972, Terminal: False, p1: 0, p2: 0, level: 5
+|  |  |  |  |  |  Number: 1944, Terminal: True, p1: 0, p2: 0, level: 6
+|  |  |  |  |  Number: 1458, Terminal: True, p1: 0, p2: 0, level: 5
+|  |  |  |  Number: 648, Terminal: False, p1: 0, p2: 0, level: 4
+|  |  |  |  |  Number: 1296, Terminal: True, p1: 0, p2: 0, level: 5
+|  |  |  Number: 243, Terminal: False, p1: 2, p2: 1, level: 3
+|  |  |  |  Number: 486, Terminal: False, p1: 1, p2: 1, level: 4
+|  |  |  |  |  Number: 972, Terminal: False, p1: 1, p2: 0, level: 5
+|  |  |  |  |  |  Number: 1944, Terminal: True, p1: 0, p2: 0, level: 6
+|  |  |  |  |  Number: 1458, Terminal: True, p1: 1, p2: 0, level: 5
+|  |  |  |  Number: 729, Terminal: False, p1: 2, p2: 2, level: 4
+|  |  |  |  |  Number: 1458, Terminal: True, p1: 2, p2: 1, level: 5
+|  |  |  |  Number: 972, Terminal: False, p1: 1, p2: 1, level: 4
+|  |  |  |  |  Number: 1944, Terminal: True, p1: 1, p2: 0, level: 5
+|  |  |  Number: 324, Terminal: False, p1: 1, p2: 0, level: 3
+|  |  |  |  Number: 648, Terminal: False, p1: 0, p2: 0, level: 4
+|  |  |  |  |  Number: 1296, Terminal: True, p1: 0, p2: 0, level: 5
+|  |  |  |  Number: 972, Terminal: False, p1: 0, p2: 0, level: 4
+|  |  |  |  |  Number: 1944, Terminal: True, p1: 0, p2: 0, level: 5
+|  |  |  |  Number: 1296, Terminal: True, p1: 0, p2: 0, level: 4
+|  |  Number: 108, Terminal: False, p1: 0, p2: 0, level: 2
+|  |  |  Number: 216, Terminal: False, p1: 0, p2: 0, level: 3
+|  |  |  |  Number: 432, Terminal: False, p1: 0, p2: 0, level: 4
+|  |  |  |  |  Number: 864, Terminal: False, p1: 0, p2: 0, level: 5
+|  |  |  |  |  |  Number: 1728, Terminal: True, p1: 0, p2: 0, level: 6
+|  |  |  |  |  Number: 1296, Terminal: True, p1: 0, p2: 0, level: 5
+|  |  |  |  Number: 648, Terminal: False, p1: 0, p2: 0, level: 4
+|  |  |  |  |  Number: 1296, Terminal: True, p1: 0, p2: 0, level: 5
+|  |  |  |  Number: 864, Terminal: False, p1: 0, p2: 0, level: 4
+|  |  |  |  |  Number: 1728, Terminal: True, p1: 0, p2: 0, level: 5
+|  |  |  Number: 324, Terminal: False, p1: 0, p2: 0, level: 3
+|  |  |  |  Number: 648, Terminal: False, p1: 0, p2: 0, level: 4
+|  |  |  |  |  Number: 1296, Terminal: True, p1: 0, p2: 0, level: 5
+|  |  |  |  Number: 972, Terminal: False, p1: 0, p2: 0, level: 4
+|  |  |  |  |  Number: 1944, Terminal: True, p1: 0, p2: 0, level: 5
+|  |  |  |  Number: 1296, Terminal: True, p1: 0, p2: 0, level: 4
+|  |  |  Number: 432, Terminal: False, p1: 0, p2: 0, level: 3
+|  |  |  |  Number: 864, Terminal: False, p1: 0, p2: 0, level: 4
+|  |  |  |  |  Number: 1728, Terminal: True, p1: 0, p2: 0, level: 5
+|  |  |  |  Number: 1296, Terminal: True, p1: 0, p2: 0, level: 4
+|  Number: 36, Terminal: False, p1: 0, p2: 0, level: 1
+|  |  Number: 72, Terminal: False, p1: 0, p2: 0, level: 2
+|  |  |  Number: 144, Terminal: False, p1: 0, p2: 0, level: 3
+|  |  |  |  Number: 288, Terminal: False, p1: 0, p2: 0, level: 4
+|  |  |  |  |  Number: 576, Terminal: False, p1: 0, p2: 0, level: 5
+|  |  |  |  |  |  Number: 1152, Terminal: False, p1: 0, p2: 0, level: 6
+|  |  |  |  |  |  |  Number: 2304, Terminal: True, p1: 0, p2: 0, level: 7
+|  |  |  |  |  |  Number: 1728, Terminal: True, p1: 0, p2: 0, level: 6
+|  |  |  |  |  Number: 864, Terminal: False, p1: 0, p2: 0, level: 5
+|  |  |  |  |  |  Number: 1728, Terminal: True, p1: 0, p2: 0, level: 6
+|  |  |  |  |  Number: 1152, Terminal: False, p1: 0, p2: 0, level: 5
+|  |  |  |  |  |  Number: 2304, Terminal: True, p1: 0, p2: 0, level: 6
+|  |  |  |  Number: 432, Terminal: False, p1: 0, p2: 0, level: 4
+|  |  |  |  |  Number: 864, Terminal: False, p1: 0, p2: 0, level: 5
+|  |  |  |  |  |  Number: 1728, Terminal: True, p1: 0, p2: 0, level: 6
+|  |  |  |  |  Number: 1296, Terminal: True, p1: 0, p2: 0, level: 5
+|  |  |  |  Number: 576, Terminal: False, p1: 0, p2: 0, level: 4
+|  |  |  |  |  Number: 1152, Terminal: False, p1: 0, p2: 0, level: 5
+|  |  |  |  |  |  Number: 2304, Terminal: True, p1: 0, p2: 0, level: 6
+|  |  |  |  |  Number: 1728, Terminal: True, p1: 0, p2: 0, level: 5
+|  |  |  Number: 216, Terminal: False, p1: 0, p2: 0, level: 3
+|  |  |  |  Number: 432, Terminal: False, p1: 0, p2: 0, level: 4
+|  |  |  |  |  Number: 864, Terminal: False, p1: 0, p2: 0, level: 5
+|  |  |  |  |  |  Number: 1728, Terminal: True, p1: 0, p2: 0, level: 6
+|  |  |  |  |  Number: 1296, Terminal: True, p1: 0, p2: 0, level: 5
+|  |  |  |  Number: 648, Terminal: False, p1: 0, p2: 0, level: 4
+|  |  |  |  |  Number: 1296, Terminal: True, p1: 0, p2: 0, level: 5
+|  |  |  |  Number: 864, Terminal: False, p1: 0, p2: 0, level: 4
+|  |  |  |  |  Number: 1728, Terminal: True, p1: 0, p2: 0, level: 5
+|  |  |  Number: 288, Terminal: False, p1: 0, p2: 0, level: 3
+|  |  |  |  Number: 576, Terminal: False, p1: 0, p2: 0, level: 4
+|  |  |  |  |  Number: 1152, Terminal: False, p1: 0, p2: 0, level: 5
+|  |  |  |  |  |  Number: 2304, Terminal: True, p1: 0, p2: 0, level: 6
+|  |  |  |  |  Number: 1728, Terminal: True, p1: 0, p2: 0, level: 5
+|  |  |  |  Number: 864, Terminal: False, p1: 0, p2: 0, level: 4
+|  |  |  |  |  Number: 1728, Terminal: True, p1: 0, p2: 0, level: 5
+|  |  |  |  Number: 1152, Terminal: False, p1: 0, p2: 0, level: 4
+|  |  |  |  |  Number: 2304, Terminal: True, p1: 0, p2: 0, level: 5
+|  |  Number: 108, Terminal: False, p1: 0, p2: 0, level: 2
+|  |  |  Number: 216, Terminal: False, p1: 0, p2: 0, level: 3
+|  |  |  |  Number: 432, Terminal: False, p1: 0, p2: 0, level: 4
+|  |  |  |  |  Number: 864, Terminal: False, p1: 0, p2: 0, level: 5
+|  |  |  |  |  |  Number: 1728, Terminal: True, p1: 0, p2: 0, level: 6
+|  |  |  |  |  Number: 1296, Terminal: True, p1: 0, p2: 0, level: 5
+|  |  |  |  Number: 648, Terminal: False, p1: 0, p2: 0, level: 4
+|  |  |  |  |  Number: 1296, Terminal: True, p1: 0, p2: 0, level: 5
+|  |  |  |  Number: 864, Terminal: False, p1: 0, p2: 0, level: 4
+|  |  |  |  |  Number: 1728, Terminal: True, p1: 0, p2: 0, level: 5
+|  |  |  Number: 324, Terminal: False, p1: 0, p2: 0, level: 3
+|  |  |  |  Number: 648, Terminal: False, p1: 0, p2: 0, level: 4
+|  |  |  |  |  Number: 1296, Terminal: True, p1: 0, p2: 0, level: 5
+|  |  |  |  Number: 972, Terminal: False, p1: 0, p2: 0, level: 4
+|  |  |  |  |  Number: 1944, Terminal: True, p1: 0, p2: 0, level: 5
+|  |  |  |  Number: 1296, Terminal: True, p1: 0, p2: 0, level: 4
+|  |  |  Number: 432, Terminal: False, p1: 0, p2: 0, level: 3
+|  |  |  |  Number: 864, Terminal: False, p1: 0, p2: 0, level: 4
+|  |  |  |  |  Number: 1728, Terminal: True, p1: 0, p2: 0, level: 5
+|  |  |  |  Number: 1296, Terminal: True, p1: 0, p2: 0, level: 4
+|  |  Number: 144, Terminal: False, p1: 0, p2: 0, level: 2
+|  |  |  Number: 288, Terminal: False, p1: 0, p2: 0, level: 3
+|  |  |  |  Number: 576, Terminal: False, p1: 0, p2: 0, level: 4
+|  |  |  |  |  Number: 1152, Terminal: False, p1: 0, p2: 0, level: 5
+|  |  |  |  |  |  Number: 2304, Terminal: True, p1: 0, p2: 0, level: 6
+|  |  |  |  |  Number: 1728, Terminal: True, p1: 0, p2: 0, level: 5
+|  |  |  |  Number: 864, Terminal: False, p1: 0, p2: 0, level: 4
+|  |  |  |  |  Number: 1728, Terminal: True, p1: 0, p2: 0, level: 5
+|  |  |  |  Number: 1152, Terminal: False, p1: 0, p2: 0, level: 4
+|  |  |  |  |  Number: 2304, Terminal: True, p1: 0, p2: 0, level: 5
+|  |  |  Number: 432, Terminal: False, p1: 0, p2: 0, level: 3
+|  |  |  |  Number: 864, Terminal: False, p1: 0, p2: 0, level: 4
+|  |  |  |  |  Number: 1728, Terminal: True, p1: 0, p2: 0, level: 5
+|  |  |  |  Number: 1296, Terminal: True, p1: 0, p2: 0, level: 4
+|  |  |  Number: 576, Terminal: False, p1: 0, p2: 0, level: 3
+|  |  |  |  Number: 1152, Terminal: False, p1: 0, p2: 0, level: 4
+|  |  |  |  |  Number: 2304, Terminal: True, p1: 0, p2: 0, level: 5
+|  |  |  |  Number: 1728, Terminal: True, p1: 0, p2: 0, level: 4

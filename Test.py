@@ -92,7 +92,7 @@ class GUI:
             self.multiply_by_2 = Button(self.moves, text="2", command=lambda: self.multiply(2)).grid(column=0, row=2, sticky="ew")
             self.multiply_by_3 = Button(self.moves, text="3", command=lambda: self.multiply(3)).grid(column=1, row=2, sticky="ew")
             self.multiply_by_4 = Button(self.moves, text="4", command=lambda: self.multiply(4)).grid(column=2, row=2, sticky="ew")
-
+    # spēles rezultāts (kad spēle ir beigusies):
     # spēles rezultāts (kad spēle ir beigusies):
     def show_results(self):
         if hasattr(self, "results"):
@@ -101,7 +101,7 @@ class GUI:
             self.results = Frame(self.root)
             self.results.pack()
             self.play_again_button = Button(self.results, text="Spēlēt vēlreiz", command=self.play_again).grid(column=0, row=0, sticky="ew")
-
+        self.moves.forget()
     # sāk spēli (pēc sākuma opciju izvēles):
     def start_game(self):
         # Проверка корректности введенного числа:
@@ -120,7 +120,7 @@ class GUI:
                 self.options.pack_forget()
 
                 # Инициализация дерева игры:
-                self.tree = Node(self.number)
+                self.tree = Node(self.number, first_player=self.current_player)
                 self.tree.expand()
 
                 # Отображение интерфейса состояния игры и возможных ходов:
@@ -157,7 +157,6 @@ class GUI:
             # Если ходов нет, игра окончена
             self.show_results()
         print(f"Computer. New number is: {self.number}")
-
     def apply_move(self, move):
         print(f"Applying move from node {self.tree.number} to {move.number}")
         print(f"Applying move: {move}")
@@ -181,6 +180,8 @@ class GUI:
         
         self.current_player = "Cilvēks"
 
+
+
     def enable_human_moves(self):
         # Разблокировать интерфейс для ходов человека, если это необходимо
         pass
@@ -199,7 +200,7 @@ class GUI:
         self.p1_score.configure(text=self.p1_score_value)
         self.current_number.configure(text=self.number)
         self.p2_score.configure(text=self.p2_score_value)
-
+        
         # skaitļa reizināšana (gājiena veikšana):
     def multiply(self, multiplier: int):
         # Умножаем текущее число и обновляем состояние игры
@@ -207,6 +208,16 @@ class GUI:
 
         # Находим узел, который соответствует новому числу
         new_node = next((child for child in self.tree.children if child.number == new_number), None)
+        if self.current_player == "Cilvēks":
+            # Тут логика обновления очков для человека
+            if new_number % 2 == 0:
+            # Если число четное, человек теряет очко
+                self.p1_score_value -= 1
+            else:
+            # Если число нечетное, человек получает очко
+                self.p1_score_value += 1
+
+
 
         if new_node:
             self.tree = new_node
@@ -222,6 +233,8 @@ class GUI:
                 if self.current_player == "Dators":
                     self.computer_move()
             else:
+
+                print(f"p2_score: {self.p2_score}, p1_score: {self.p1_score}")
                 print(f"show_results")
                 self.show_results()
             

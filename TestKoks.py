@@ -72,11 +72,13 @@ node_id = 0
 
 class Node:
     # klases inicializācija:
-    def __init__(self, number, p1=0, p2=0, level=0, parent=None):
+    def __init__(self, number, p1=0, p2=0, level=0, parent=None, first_player='Cilvēks'):
         # galvenie stāvokļa mainīgie:
         self.number: int = number
         self.p1: int = p1
         self.p2: int = p2
+        # Если 'Cilvēks' делает первый ход, level остается как есть, иначе для 'Dators' начальный level будет 1
+        self.level = level if first_player == 'Cilvēks' else 1
         # stāvokļa unikālais numurs (lai algoritmos varētu atzīmēt, kuras virsotnes jau ir apskatītas):
         global node_id
         self.id: int = node_id
@@ -84,7 +86,7 @@ class Node:
         # citi mainīgie:
         self.children: List[Node] = []
         self.parent: Optional[Node] = parent
-        self.level: int = level
+
 
     # pārbauda vai ir beigu stāvoklis:
     def is_terminal(self):
@@ -147,7 +149,7 @@ class Node:
                 return 0  # Ничья
 
         # В промежуточных состояниях оценка равна разнице в очках с добавлением награды за приближение к цели
-        return score_difference * 100 - closeness_to_goal
+        return score_difference
 
 
 

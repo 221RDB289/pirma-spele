@@ -8,7 +8,6 @@ from TestKoks import Node, minimax, alphabeta
 from tkinter import *
 from tkinter import ttk
 
-
 class GUI:
     # GUI klases inicializācija:
     def __init__(self):
@@ -150,9 +149,6 @@ class GUI:
             self.update_state()
             if self.tree.is_terminal():
                 self.show_results()
-            else:
-                # Передать ход человеку
-                self.enable_human_moves()
         else:
             # Если ходов нет, игра окончена
             self.show_results()
@@ -179,12 +175,6 @@ class GUI:
         # Если следующий ход за человеком, обновить интерфейс для отображения возможных ходов
         
         self.current_player = "Cilvēks"
-
-
-
-    def enable_human_moves(self):
-        # Разблокировать интерфейс для ходов человека, если это необходимо
-        pass
 
 
 
@@ -217,13 +207,9 @@ class GUI:
             # Если число нечетное, человек получает очко
                 self.p1_score_value += 1
 
-
-
         if new_node:
             self.tree = new_node
             self.number = new_node.number
-
-            
 
             # Проверяем, не достигнут ли конец игры
             if not self.tree.is_terminal():

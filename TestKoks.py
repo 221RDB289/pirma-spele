@@ -7,7 +7,7 @@ node_and_result = {}
 def minimax(node, is_maximizing=True):
     global node_and_result
     if node.is_terminal():
-        return node.evaluate(), None  # Нет следующего хода, так как игра закончена
+        return node.evaluate(), None  # Nākamā gājiena nav, jo spēle ir beigusies
     best_move = None
     if is_maximizing:
         max_eval = float('-inf')
@@ -77,7 +77,7 @@ class Node:
         self.number: int = number
         self.p1: int = p1
         self.p2: int = p2
-        # Если 'Cilvēks' делает первый ход, level остается как есть, иначе для 'Dators' начальный level будет 1
+        # Ja 'Cilvēks' izdara pirmo gājienu, līmenis paliek kā ir, pretējā gadījumā 'Dators' sākuma līmenis būs 1
         self.level = level if first_player == 'Cilvēks' else 1
         # stāvokļa unikālais numurs (lai algoritmos varētu atzīmēt, kuras virsotnes jau ir apskatītas):
         global node_id
@@ -132,42 +132,27 @@ class Node:
     # heiristiskā novērtējuma funkcija:
     def evaluate(self) -> int:
         """
-        Эвристика для оценки состояний игры:
-        - Учитывается разница в очках между компьютером и игроком.
-        - Добавлена награда за приближение к целевому числу 1200.
+        Heiristika spēļu stāvokļu novērtēšanai:
+        - Tiek ņemta vērā punktu atšķirība starp datoru un cilvēku.
+        - Pievienota atlīdzība par tuvošanos mērķa skaitlim 1200.
         """
-        score_difference = self.p2 - self.p1  # p2 - очки компьютера, p1 - очки человека
-        closeness_to_goal = max(0, 1200 - self.number)  # Насколько близко текущее число к 1200
+        score_difference = self.p2 - self.p1  # p2 - datora punktu skaits, p1 - cilvēka punktu skaits
+        closeness_to_goal = max(0, 1200 - self.number)  # Cik tuvu pašreizējais skaitlis ir 1200
 
-        # Если состояние является конечным (игра окончена)
+        # Ja spēle beidzās
+
         if self.is_terminal():
             if score_difference > 0:
-                return 10000 + closeness_to_goal  # Большая положительная оценка для победы компьютера
+                return 10000 + closeness_to_goal  # Liels novērtējums par datora uzvaru
             elif score_difference < 0:
-                return -10000 - closeness_to_goal  # Большая отрицательная оценка для проигрыша
+                return -10000 - closeness_to_goal  # Liels negatīvs novērtējums par datora zaudējumu
             else:
-                return 0  # Ничья
+                return 0  # Neizšķirts
 
-        # В промежуточных состояниях оценка равна разнице в очках с добавлением награды за приближение к цели
+        # Starpposma stāvokļos vērtējums ir vienāds ar punktu starpību
         return score_difference
 
 
 
 
-# if __name__ == "__main__":
-#     start_number = 13
-#     # Создаем начальное состояние игрового дерева:
-#     root_node = Node(start_number)
-#     root_node.expand()  # Расширяем дерево для всех возможных ходов
 
-#     # Тестируем алгоритм Minimax:
-#     minimax_score, minimax_move = minimax(root_node, True)
-#     print(f"Minimax score: {minimax_score}, Minimax best move: {minimax_move.number}")
-
-#     # Тестируем алгоритм Alpha-Beta:
-#     alphabeta_score, alphabeta_move = alphabeta(root_node, float('-inf'), float('inf'), True)
-#     print(f"Alpha-Beta score: {alphabeta_score}, Alpha-Beta best move: {alphabeta_move.number}")
-
-#     # Выводим информацию о всех узлах для проверки:
-#     with open("koks.txt", "w") as file:
-#         root_node.show_node_tree(file)

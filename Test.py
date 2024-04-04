@@ -93,6 +93,17 @@ class GUI:
             self.multiply_by_3 = Button(self.moves, text="3", command=lambda: self.multiply(3)).grid(column=1, row=2, sticky="ew")
             self.multiply_by_4 = Button(self.moves, text="4", command=lambda: self.multiply(4)).grid(column=2, row=2, sticky="ew")
 
+    # datora pēdējais veiktais gājiens:
+    def show_computer_last_move(self, previous_number, multiplier, new_number):
+        if hasattr(self, "computer_last_move"):
+            self.computer_last_move.pack()
+            self.computer_last_move_value = Label(self.computer_last_move, text=f"{previous_number} reizināja ar {multiplier} un ieguva jaunu skaitli {new_number}").grid(column=0, row=1, sticky="ew")
+        else:
+            self.computer_last_move = Frame(self.root)
+            self.computer_last_move.pack()
+
+            self.computer_last_move_text = Label(self.computer_last_move, text="Datora pēdējais gājiens:").grid(column=0, row=0, sticky="ew")
+            self.computer_last_move_value = Label(self.computer_last_move, text=f"{previous_number} reizināja ar {multiplier} un ieguva jaunu skaitli {new_number}").grid(column=0, row=1, sticky="ew")
 
     # spēles rezultāts (kad spēle ir beigusies):
     def show_results(self):
@@ -100,11 +111,11 @@ class GUI:
             self.results.pack()
             # kurš uzvarēja:
             if self.p1_score_value == self.p2_score_value:
-                game_result = 'Neizšķirts'
+                game_result = "Neizšķirts"
             elif self.p1_score_value > self.p2_score_value:
-                game_result = 'Cilvēks uzvarēja'
+                game_result = "Cilvēks uzvarēja"
             else:
-                game_result = 'Dators uzvarēja'
+                game_result = "Dators uzvarēja"
             self.who_won_text = Label(self.results, text="Spēles rezultāts:").grid(column=0, row=1, sticky="ew")
             self.who_won_value = Label(self.results, text=game_result).grid(column=0, row=2, sticky="ew")
         else:
@@ -113,16 +124,17 @@ class GUI:
             self.play_again_button = Button(self.results, text="Spēlēt vēlreiz", command=self.play_again).grid(column=0, row=0, sticky="ew")
             # kurš uzvarēja:
             if self.p1_score_value == self.p2_score_value:
-                game_result = 'Neizšķirts'
+                game_result = "Neizšķirts"
             elif self.p1_score_value > self.p2_score_value:
-                game_result = 'Cilvēks uzvarēja'
+                game_result = "Cilvēks uzvarēja"
             else:
-                game_result = 'Dators uzvarēja'
+                game_result = "Dators uzvarēja"
             self.who_won_text = Label(self.results, text="Spēles rezultāts:").grid(column=0, row=1, sticky="ew")
             self.who_won_value = Label(self.results, text=game_result).grid(column=0, row=2, sticky="ew")
         # atbrīvojas no iespējamo gājienu pogām:
         self.moves.forget()
-
+        # atbrīvojas no datora pēdējā veiktā gājiena loga:
+        self.computer_last_move.forget()
 
     # sāk spēli (pēc sākuma opciju izvēles):
     def start_game(self):
@@ -156,6 +168,7 @@ class GUI:
                 print("Ievadītais skaitlis nav atļautā diapazonā.")
         except ValueError:
             print("Nepareizi ievadīts skaitlis.")
+
     def computer_move(self):
         print("Computer is making a move")
         best_eval, best_move = None, None
@@ -163,9 +176,9 @@ class GUI:
             best_eval, best_move = minimax(self.tree)
         else:
             best_eval, best_move = alphabeta(self.tree)
-        
+
         print(f"Best move evaluated: {best_eval}, move: {best_move}")
-        
+
         if best_move:
             # Izmantot labāko gājienu
             self.apply_move(best_move)
@@ -176,6 +189,7 @@ class GUI:
             # Ja nav gājienu, spēle beidzas
             self.show_results()
         print(f"Computer. New number is: {self.number}")
+
     def apply_move(self, move):
         print(f"Applying move from node {self.tree.number} to {move.number}")
         print(f"Applying move: {move}")
@@ -185,9 +199,10 @@ class GUI:
         self.number = move.number  # Ņemam jauno skaitli no koka
 
         # Logs, kurš parāda datora gājienu
-        if previous_number != 0:  
-            multiplier = self.number / previous_number
+        if previous_number != 0:
+            multiplier = int(self.number / previous_number)
             print(f"Computer used multiplier: {multiplier}. New number is: {self.number}")
+            self.show_computer_last_move(previous_number, multiplier, self.number)
         else:
             print("Error: previous number is zero, cannot determine the multiplier.")
 
@@ -195,23 +210,26 @@ class GUI:
         self.p1_score_value = move.p1
         self.p2_score_value = move.p2
         self.update_state()  # Interfejsa atjaunošana
-        
+
         # Gājiena nodošana citam cilvēkam
         self.current_player = "Cilvēks"
 
         # spēlēt vēlreiz (kad spēle jau ir beigusies):
+
     def play_again(self):
         self.state.forget()
         self.results.forget()
         self.show_options()
 
         # atjauno pašreizējā stāvokļa vērtības grafiskajā interfeisā:
+
     def update_state(self):
         self.p1_score.configure(text=self.p1_score_value)
         self.current_number.configure(text=self.number)
         self.p2_score.configure(text=self.p2_score_value)
-        
+
         # skaitļa reizināšana (gājiena veikšana):
+
     def multiply(self, multiplier: int):
         new_number = self.number * multiplier
 
@@ -225,17 +243,13 @@ class GUI:
             else:
                 self.p1_score_value += 1
 
-
-
         if new_node:
             self.tree = new_node
             self.number = new_node.number
 
-            
-
             # Pārbaudam vai nav spēles beigums
             if not self.tree.is_terminal():
-                # 
+                #
                 self.current_player = "Cilvēks" if self.current_player == "Dators" else "Dators"
                 # Если следующий ход за компьютером, он делает ход
                 if self.current_player == "Dators":
@@ -245,13 +259,10 @@ class GUI:
                 print(f"p2_score: {self.p2_score}, p1_score: {self.p1_score}")
                 print(f"show_results")
                 self.show_results()
-            
+
             self.update_state()
         else:
             print("No valid move found in the tree. This should not happen.")
-
-
-        
 
 
 if __name__ == "__main__":

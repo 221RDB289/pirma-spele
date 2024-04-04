@@ -93,31 +93,6 @@ class GUI:
             self.multiply_by_3 = Button(self.moves, text="3", command=lambda: self.multiply(3)).grid(column=1, row=2, sticky="ew")
             self.multiply_by_4 = Button(self.moves, text="4", command=lambda: self.multiply(4)).grid(column=2, row=2, sticky="ew")
 
-    # spēles pašreizējais stāvoklis (punkti un skaitlis):
-    # def last_computer_move(self):
-    #     if hasattr(self, "last_computer_move"):
-    #         self.last_computer_move.pack()
-    #         self.update_state()
-    #     else:
-    #         self.last_computer_move = Frame(self.root, width=321)
-    #         self.last_computer_move.pack()
-
-    #         self.score_text = Label(self.state, text="Spēles stāvoklis", justify="center", width=45).grid(column=0, row=1, columnspan=6)
-
-    #         # cilvēks:
-    #         self.p1_text = Label(self.state, text="Cilvēks").grid(column=0, row=2)
-    #         self.p1_score = Label(self.state, text=self.p1_score_value)
-    #         self.p1_score.grid(column=0, row=3)
-
-    #         # pašreizējais skaitlis:
-    #         self.current_number_text = Label(self.state, text="Skaitlis").grid(column=1, row=2, columnspan=4)
-    #         self.current_number = Label(self.state, text=str(self.choose_number.get()))
-    #         self.current_number.grid(column=1, row=3, columnspan=4)
-
-    #         # dators:
-    #         self.p2_text = Label(self.state, text="Dators").grid(column=5, row=2)
-    #         self.p2_score = Label(self.state, text=self.p2_score_value)
-    #         self.p2_score.grid(column=5, row=3)
 
     # spēles rezultāts (kad spēle ir beigusies):
     def show_results(self):
@@ -125,11 +100,11 @@ class GUI:
             self.results.pack()
             # kurš uzvarēja:
             if self.p1_score_value == self.p2_score_value:
-                game_result = "Neizšķirts"
+                game_result = 'Neizšķirts'
             elif self.p1_score_value > self.p2_score_value:
-                game_result = "Cilvēks uzvarēja"
+                game_result = 'Cilvēks uzvarēja'
             else:
-                game_result = "Dators uzvarēja"
+                game_result = 'Dators uzvarēja'
             self.who_won_text = Label(self.results, text="Spēles rezultāts:").grid(column=0, row=1, sticky="ew")
             self.who_won_value = Label(self.results, text=game_result).grid(column=0, row=2, sticky="ew")
         else:
@@ -138,49 +113,49 @@ class GUI:
             self.play_again_button = Button(self.results, text="Spēlēt vēlreiz", command=self.play_again).grid(column=0, row=0, sticky="ew")
             # kurš uzvarēja:
             if self.p1_score_value == self.p2_score_value:
-                game_result = "Neizšķirts"
+                game_result = 'Neizšķirts'
             elif self.p1_score_value > self.p2_score_value:
-                game_result = "Cilvēks uzvarēja"
+                game_result = 'Cilvēks uzvarēja'
             else:
-                game_result = "Dators uzvarēja"
+                game_result = 'Dators uzvarēja'
             self.who_won_text = Label(self.results, text="Spēles rezultāts:").grid(column=0, row=1, sticky="ew")
             self.who_won_value = Label(self.results, text=game_result).grid(column=0, row=2, sticky="ew")
         # atbrīvojas no iespējamo gājienu pogām:
         self.moves.forget()
 
+
     # sāk spēli (pēc sākuma opciju izvēles):
     def start_game(self):
-        # Проверка корректности введенного числа:
+        # Pārbaudam, vai skaitlis ir korekts
         try:
             n = int(self.choose_number.get())
             if 8 <= n <= 18:
-                # Сброс предыдущих результатов:
+                # Iepriekšējo rezultātu atiestatīšana
                 self.p1_score_value = 0
                 self.p2_score_value = 0
                 self.number = n
 
-                # Определение, кто начинает игру:
+                # Noteikšana, kurš sāk spēli:
                 self.current_player = self.who_starts_value.get()
 
-                # Удаление интерфейса настроек:
+                # Iestatījumu saskarnes noņemšana
                 self.options.pack_forget()
 
-                # Инициализация дерева игры:
+                # Spēles koka inicializācija:
                 self.tree = Node(self.number, first_player=self.current_player)
                 self.tree.expand()
 
-                # Отображение интерфейса состояния игры и возможных ходов:
+                # Spēles stāvokļa un iespējamo gājienu saskarnes attēlošana:
                 self.show_state()
                 self.show_moves()
 
-                # Если начинает компьютер, сделать ход:
+                # Ja dators sāk spēli:
                 if self.current_player == "Dators":
                     self.computer_move()
             else:
                 print("Ievadītais skaitlis nav atļautā diapazonā.")
         except ValueError:
             print("Nepareizi ievadīts skaitlis.")
-
     def computer_move(self):
         print("Computer is making a move")
         best_eval, best_move = None, None
@@ -188,80 +163,79 @@ class GUI:
             best_eval, best_move = minimax(self.tree)
         else:
             best_eval, best_move = alphabeta(self.tree)
-
+        
         print(f"Best move evaluated: {best_eval}, move: {best_move}")
-
+        
         if best_move:
-            # Примените лучший ход
+            # Izmantot labāko gājienu
             self.apply_move(best_move)
             self.update_state()
             if self.tree.is_terminal():
                 self.show_results()
         else:
-            # Если ходов нет, игра окончена
+            # Ja nav gājienu, spēle beidzas
             self.show_results()
         print(f"Computer. New number is: {self.number}")
-
     def apply_move(self, move):
         print(f"Applying move from node {self.tree.number} to {move.number}")
         print(f"Applying move: {move}")
         previous_number = self.number
-        # Обновить текущий узел дерева до узла лучшего хода
+        # Atjauninot pašreizējo koka mezglu uz labāko pārvietošanas mezglu
         self.tree = move
-        self.number = move.number  # Предположим, что узел содержит новое число игры
+        self.number = move.number  # Ņemam jauno skaitli no koka
 
-        if previous_number != 0:  # Проверяем, чтобы избежать деления на ноль
+        # Logs, kurš parāda datora gājienu
+        if previous_number != 0:  
             multiplier = self.number / previous_number
             print(f"Computer used multiplier: {multiplier}. New number is: {self.number}")
         else:
             print("Error: previous number is zero, cannot determine the multiplier.")
 
-        # Обновить очки
+        # Punktu atjaunošana
         self.p1_score_value = move.p1
         self.p2_score_value = move.p2
-        self.update_state()  # Обновляем интерфейс
-        # Если следующий ход за человеком, обновить интерфейс для отображения возможных ходов
-
+        self.update_state()  # Interfejsa atjaunošana
+        
+        # Gājiena nodošana citam cilvēkam
         self.current_player = "Cilvēks"
 
         # spēlēt vēlreiz (kad spēle jau ir beigusies):
-
     def play_again(self):
         self.state.forget()
         self.results.forget()
         self.show_options()
 
         # atjauno pašreizējā stāvokļa vērtības grafiskajā interfeisā:
-
     def update_state(self):
         self.p1_score.configure(text=self.p1_score_value)
         self.current_number.configure(text=self.number)
         self.p2_score.configure(text=self.p2_score_value)
-
+        
         # skaitļa reizināšana (gājiena veikšana):
-
     def multiply(self, multiplier: int):
-        # Умножаем текущее число и обновляем состояние игры
         new_number = self.number * multiplier
 
-        # Находим узел, который соответствует новому числу
+        # Atradam mezglu ar pašreizējo skaitli
         new_node = next((child for child in self.tree.children if child.number == new_number), None)
+
+        # Ja cilvēks veic pēdējo g
         if self.current_player == "Cilvēks":
-            # Тут логика обновления очков для человека
             if new_number % 2 == 0:
-                # Если число четное, человек теряет очко
                 self.p2_score_value -= 1
             else:
-                # Если число нечетное, человек получает очко
                 self.p1_score_value += 1
+
+
 
         if new_node:
             self.tree = new_node
             self.number = new_node.number
 
-            # Проверяем, не достигнут ли конец игры
+            
+
+            # Pārbaudam vai nav spēles beigums
             if not self.tree.is_terminal():
-                # Переключаем ход на другого игрока
+                # 
                 self.current_player = "Cilvēks" if self.current_player == "Dators" else "Dators"
                 # Если следующий ход за компьютером, он делает ход
                 if self.current_player == "Dators":
@@ -271,10 +245,13 @@ class GUI:
                 print(f"p2_score: {self.p2_score}, p1_score: {self.p1_score}")
                 print(f"show_results")
                 self.show_results()
-
+            
             self.update_state()
         else:
             print("No valid move found in the tree. This should not happen.")
+
+
+        
 
 
 if __name__ == "__main__":

@@ -134,20 +134,8 @@ class Node:
         """
         Heiristika spēļu stāvokļu novērtēšanai:
         - Tiek ņemta vērā punktu atšķirība starp datoru un cilvēku.
-        - Pievienota atlīdzība par tuvošanos mērķa skaitlim 1200.
         """
         score_difference = self.p2 - self.p1  # p2 - datora punktu skaits, p1 - cilvēka punktu skaits
-        closeness_to_goal = max(0, 1200 - self.number)  # Cik tuvu pašreizējais skaitlis ir 1200
-
-        # Ja spēle beidzās
-
-        if self.is_terminal():
-            if score_difference > 0:
-                return 10000 + closeness_to_goal  # Liels novērtējums par datora uzvaru
-            elif score_difference < 0:
-                return -10000 - closeness_to_goal  # Liels negatīvs novērtējums par datora zaudējumu
-            else:
-                return 0  # Neizšķirts
 
         # Starpposma stāvokļos vērtējums ir vienāds ar punktu starpību
         return score_difference

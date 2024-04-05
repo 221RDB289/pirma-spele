@@ -235,7 +235,7 @@ class GUI:
         # Atradam mezglu ar pašreizējo skaitli
         new_node = next((child for child in self.tree.children if child.number == new_number), None)
 
-        # Ja cilvēks veic pēdējo g
+        # Ja cilvēks veic pēdējo gājienu
         if self.current_player == "Cilvēks":
             if new_number % 2 == 0:
                 self.p2_score_value -= 1
@@ -250,7 +250,7 @@ class GUI:
             if not self.tree.is_terminal():
                 #
                 self.current_player = "Cilvēks" if self.current_player == "Dators" else "Dators"
-                # Если следующий ход за компьютером, он делает ход
+                # Ja nakamajs gajiens ir datora tad dators dara gajienu
                 if self.current_player == "Dators":
                     self.computer_move()
             else:

@@ -1,4 +1,3 @@
-# В начале вашего файла Test.py добавьте следующую строку:
 from TestKoks import Node, minimax, alphabeta
 
 # Tkinter dokumentācija (grafiskās vides komandas un opcijas): https://docs.python.org/3/library/tk.html

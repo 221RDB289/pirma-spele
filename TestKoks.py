@@ -24,8 +24,6 @@ def minimax(node, is_maximizing=True):
             if eval < min_eval:
                 min_eval = eval
                 best_move = child_node
-    
-    # Saglabā labākā gājiena ID vārdnīcā node_and_result pašreizējam mezglam.
     # print(f"Considering node {node.number} at level {node.level}") # logs testēšanai
     return (max_eval if is_maximizing else min_eval), best_move # Atgriež vai nu maksimālo, vai minimālo vērtējumu atkarībā no spēlētāja veida, un labāko gājienu
 

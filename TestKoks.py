@@ -1,69 +1,63 @@
 from typing import Optional, List
 
-# minimaksa algoritms:
-node_and_result = {}
-
-
-def minimax(node, is_maximizing=True):
-    global node_and_result
+# virsotņu skaits
+virsotnu_skaits = 0
+# minimax algortms, kurš saņem spēles mezglu un bool tipa parametru, kas norāda, vai pašreizējais spēlētājs ir maksimizējošais
+def minimax(node, is_maximizing=True): 
+    global virsotnu_skaits
+    virsotnu_skaits += 1
+    print(f"Considering node {virsotnu_skaits} ")
     if node.is_terminal():
         return node.evaluate(), None  # Nākamā gājiena nav, jo spēle ir beigusies
-    best_move = None
-    if is_maximizing:
+    best_move = None # mainīgais, kas glabā labāko gājienu
+    if is_maximizing: # ja pašreizējais spēlētājs ir maksimizējošais, iet cauri visiem iespējamiem gājieniem un ieraksta labāko gājienu 
         max_eval = float('-inf')
         for child_node in node.children:
-            eval, _ = minimax(child_node, False)
+            eval, _ = minimax(child_node, False) # rekursīvi izsaucam minimax funkciju bērna mezglam, pārslēdzoties uz minimizējošajam spēlētāju
             if eval > max_eval:
                 max_eval = eval
                 best_move = child_node
-    else:
+    else: # līdzīgi pāriet cauri visiem iespējamiem gājieniem, bet ar mērķi minimizēt vērtējumu
         min_eval = float('inf')
         for child_node in node.children:
-            eval, _ = minimax(child_node, True)
+            eval, _ = minimax(child_node, True) # rekursīvi izsaucam minimax funkciju bērna mezglam, pārslēdzoties uz maksimizējošo spēlētāju
             if eval < min_eval:
                 min_eval = eval
                 best_move = child_node
-    node_and_result[node.id] = best_move.id if best_move else None
-    # print(f"Considering node {node.number} at level {node.level}")
-    return (max_eval if is_maximizing else min_eval), best_move
+    
+    # Saglabā labākā gājiena ID vārdnīcā node_and_result pašreizējam mezglam.
+    # print(f"Considering node {node.number} at level {node.level}") # logs testēšanai
+    return (max_eval if is_maximizing else min_eval), best_move # Atgriež vai nu maksimālo, vai minimālo vērtējumu atkarībā no spēlētāja veida, un labāko gājienu
 
-
+# alphabeta funkcija, kurš saņem spēles mezglu, alfa un beta vērtības, kā arī bool tipa parametru,kas norāda, vai pašreizējais spēlētājs ir maksimizējošais
 def alphabeta(node, alpha=float('-inf'), beta=float('inf'), is_maximizing=True):
-    global node_and_result
+    global virsotnu_skaits
+    virsotnu_skaits += 1
+    print(f"Considering node {virsotnu_skaits} ")
     if node.is_terminal():
-        return node.evaluate(), None
+        return node.evaluate(), None # Nākamā gājiena nav, jo spēle ir beigusies
     best_move = None
-    if is_maximizing:
+    if is_maximizing: # ja pašreizējais spēlētājs ir maksimizējošais, iet cauri visiem iespējamiem gājieniem un ieraksta labāko gājienu 
         for child in node.children:
-            eval, _ = alphabeta(child, alpha, beta, False)
+            eval, _ = alphabeta(child, alpha, beta, False) # rekursīvi izsaucam alphabeta funkciju bērna mezglam, pārslēdzoties uz minimizējošajam spēlētāju
             if eval > alpha:
                 alpha = eval
                 best_move = child
-            if beta <= alpha:
+            if beta <= alpha: # ja beta vērtība ir mazāka vai vienāda ar alfu, tad pārtrauc ciklu, lai izvairītos no turpmākās zara apskates
                 break
-        return alpha, best_move
-    else:
+        return alpha, best_move # atgriež alfa vērtību un labāko gājienu maksimizējošajam spēlētājam
+    else: # līdzīgi pāriet cauri visiem iespējamiem gājieniem, bet ar mērķi minimizēt vērtējumu
         for child in node.children:
-            eval, _ = alphabeta(child, alpha, beta, True)
+            eval, _ = alphabeta(child, alpha, beta, True) # rekursīvi izsaucam alphabeta funkciju bērna mezglam, pārslēdzoties uz maksimizējošo spēlētāju
             if eval < beta:
                 beta = eval
                 best_move = child
             if beta <= alpha:
                 break
-        return beta, best_move
+        return beta, best_move # atgriež alfa vērtību un labāko gājienu minimizējošajam spēlētājam.
 
 
-def get_best_move(node):
-    global node_and_result
-    for child_node in node.children:
-        # max līmenis:
-        if child_node.level % 2 == 0:
-            if node_and_result[child_node.id] == 1:
-                return child_node.id
-        # min līmenis:
-        else:
-            if node_and_result[child_node.id] == 0:
-                return child_node.id
+
 
 
 # spēles stāvoklis:

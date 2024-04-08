@@ -2,7 +2,7 @@ from typing import Optional, List
 
 # virsotņu skaits
 virsotnu_skaits = 0
-# minimax algortms, kurš saņem spēles mezglu un bool tipa parametru, kas norāda, vai pašreizējais spēlētājs ir maksimizējošais
+# Minimaksa algoritms, kurš saņem spēles virsotni un bool tipa parametru, kas norāda, vai pašreizējais spēlētājs ir maksimizētājs
 def minimax(node, is_maximizing=True): 
     global virsotnu_skaits
     virsotnu_skaits += 1
@@ -10,24 +10,24 @@ def minimax(node, is_maximizing=True):
     if node.is_terminal():
         return node.evaluate(), None  # Nākamā gājiena nav, jo spēle ir beigusies
     best_move = None # mainīgais, kas glabā labāko gājienu
-    if is_maximizing: # ja pašreizējais spēlētājs ir maksimizējošais, iet cauri visiem iespējamiem gājieniem un ieraksta labāko gājienu 
+    if is_maximizing: # ja pašreizējais spēlētājs ir maksimizētājs, tad iziet cauri visām virsotnēm un saglabā labāko
         max_eval = float('-inf')
         for child_node in node.children:
-            eval, _ = minimax(child_node, False) # rekursīvi izsaucam minimax funkciju bērna mezglam, pārslēdzoties uz minimizējošajam spēlētāju
+            eval, _ = minimax(child_node, False) # rekursīvi izsaucam Minimaksa funkciju virsotnes pēctecim, pārslēdzoties uz minimizētāju
             if eval > max_eval:
                 max_eval = eval
                 best_move = child_node
-    else: # līdzīgi pāriet cauri visiem iespējamiem gājieniem, bet ar mērķi minimizēt vērtējumu
+    else: # līdzīgi iziet cauri visām virsotnēm, bet ar mērķi minimizēt vērtējumu
         min_eval = float('inf')
         for child_node in node.children:
-            eval, _ = minimax(child_node, True) # rekursīvi izsaucam minimax funkciju bērna mezglam, pārslēdzoties uz maksimizējošo spēlētāju
+            eval, _ = minimax(child_node, True) # rekursīvi izsaucam Minimaksa funkciju virsotnes pēctecim, pārslēdzoties uz maksimizētāju
             if eval < min_eval:
                 min_eval = eval
                 best_move = child_node
     # print(f"Considering node {node.number} at level {node.level}") # logs testēšanai
-    return (max_eval if is_maximizing else min_eval), best_move # Atgriež vai nu maksimālo, vai minimālo vērtējumu atkarībā no spēlētāja veida, un labāko gājienu
+    return (max_eval if is_maximizing else min_eval), best_move # Atgriež maksimālo vai minimālo vērtējumu atkarībā no spēlētāja veida, un labāko gājienu
 
-# alphabeta funkcija, kurš saņem spēles mezglu, alfa un beta vērtības, kā arī bool tipa parametru,kas norāda, vai pašreizējais spēlētājs ir maksimizējošais
+# Alfabeta algoritms, kurš saņem spēles virsotni, alfa un beta vērtības, kā arī bool tipa parametru,kas norāda, vai pašreizējais spēlētājs ir maksimizētājs
 def alphabeta(node, alpha=float('-inf'), beta=float('inf'), is_maximizing=True):
     global virsotnu_skaits
     virsotnu_skaits += 1
@@ -35,24 +35,24 @@ def alphabeta(node, alpha=float('-inf'), beta=float('inf'), is_maximizing=True):
     if node.is_terminal():
         return node.evaluate(), None # Nākamā gājiena nav, jo spēle ir beigusies
     best_move = None
-    if is_maximizing: # ja pašreizējais spēlētājs ir maksimizējošais, iet cauri visiem iespējamiem gājieniem un ieraksta labāko gājienu 
+    if is_maximizing: # ja pašreizējais spēlētājs ir maksimizētājs, tad iziet cauri visām virsotnēm un saglabā labāko 
         for child in node.children:
-            eval, _ = alphabeta(child, alpha, beta, False) # rekursīvi izsaucam alphabeta funkciju bērna mezglam, pārslēdzoties uz minimizējošajam spēlētāju
+            eval, _ = alphabeta(child, alpha, beta, False) # tiek rekursīvi izsaukta Alfabeta funkciju virsotnes pēctecim, pārslēdzoties uz minimizētāju
             if eval > alpha:
                 alpha = eval
                 best_move = child
-            if beta <= alpha: # ja beta vērtība ir mazāka vai vienāda ar alfu, tad pārtrauc ciklu, lai izvairītos no turpmākās zara apskates
+            if beta <= alpha: # ja beta vērtība ir mazāka vai vienāda ar alfu, tad tiek pārtraukts cikls - zars netiek tālāk apskatīts
                 break
-        return alpha, best_move # atgriež alfa vērtību un labāko gājienu maksimizējošajam spēlētājam
-    else: # līdzīgi pāriet cauri visiem iespējamiem gājieniem, bet ar mērķi minimizēt vērtējumu
+        return alpha, best_move # atgriež alfa vērtību un labāko gājienu maksimizētājam
+    else: # līdzīgi iziet cauri visām virsotnēm, bet ar mērķi minimizēt vērtējumu
         for child in node.children:
-            eval, _ = alphabeta(child, alpha, beta, True) # rekursīvi izsaucam alphabeta funkciju bērna mezglam, pārslēdzoties uz maksimizējošo spēlētāju
+            eval, _ = alphabeta(child, alpha, beta, True) # rekursīvi izsaucam Alfabeta funkciju virsotnes pēctecim, pārslēdzoties uz maksimizētāju
             if eval < beta:
                 beta = eval
                 best_move = child
             if beta <= alpha:
                 break
-        return beta, best_move # atgriež alfa vērtību un labāko gājienu minimizējošajam spēlētājam.
+        return beta, best_move # atgriež alfa vērtību un labāko gājienu minimizētājam
 
 
 

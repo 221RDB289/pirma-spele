@@ -2,8 +2,9 @@
 # Tkinter OptionMenu elementa paraugs: https://www.geeksforgeeks.org/tkinter-optionmenu-widget/
 # Tkinter Button elementa komandas izsaukšana ar mainīgo: https://stackoverflow.com/questions/6920302/how-to-pass-arguments-to-a-button-command-in-tkinter
 # Tkinter validācija: https://www.pythontutorial.net/tkinter/tkinter-validation/
+import time
 
-from tree_and_algorithms import Node, minimax, alphabeta
+from tree_and_algorithms import Node, minimax, alphabeta, node_count
 from tkinter import *
 from tkinter import ttk
 
@@ -165,6 +166,9 @@ class GUI:
 
     # dators veic gājienu:
     def computer_move(self):
+        # fiksējam laiku, pirms gājiena veikšanas
+        start_time = time.time()
+
         # iepriekšējais skaitlis (pirms gājiena veikšanas), lai to attēlotu datora pēdējā veiktā gājiena sadaļā:
         previous_number = self.current_node.number
         # dators iegūst labāko gājienu atkarībā no algoritma:
@@ -184,6 +188,12 @@ class GUI:
             # beidz spēli un parāda spēles beigu/rezultāta logu:
             self.show_results()
         # (nav nepieciešams norādīt, ka cilvēkam ir jāveic nākamais gājiens, jo tas notiek spiežot reizinātāja pogas)
+        end_time = time.time() # laks pēc gājiena veikšanas
+
+        print(f"Dators veica gājienu {(end_time - start_time)*100} milisekundēs")
+        print(f"Virsotņu skaits, kuru apskatīja dators: {node_count('get')}")
+
+        node_count("reset")
 
     # spēlēt vēlreiz (kad spēle jau ir beigusies):
     def play_again(self):

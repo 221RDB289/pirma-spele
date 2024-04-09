@@ -1,9 +1,10 @@
 from typing import Optional, List
 
+virsotnes = 0
 
 # minimaksa algoritms:
 def minimax(node, is_maximizing=True):
-    global node_and_result
+    node_count("increment")
     # ja ir beigu stāvoklis:
     if node.is_terminal():
         eval = node.evaluate()  # stāvokļa heiristiskais novērtējums
@@ -33,7 +34,7 @@ def minimax(node, is_maximizing=True):
 
 # alfabeta algoritms:
 def alphabeta(node, alpha=float("-inf"), beta=float("inf"), is_maximizing=True):
-    global node_and_result
+    node_count("increment")
     # ja ir beigu stāvoklis:
     if node.is_terminal():
         eval = node.evaluate()  # stāvokļa heiristiskais novērtējums
@@ -65,10 +66,19 @@ def alphabeta(node, alpha=float("-inf"), beta=float("inf"), is_maximizing=True):
         return best_move, beta
 
 
+
+# Virsotņu skaitīšana
+def node_count(action="get"):
+    global virsotnes
+    if action == "increment":
+        virsotnes += 1
+    elif action == "reset":
+        virsotnes = 0
+    elif action == "get":
+        return virsotnes
+    
 # spēles stāvoklis/koks:
 node_id = 0
-
-
 class Node:
     # klases inicializācija:
     def __init__(self, number, p1=0, p2=0, level=0, parent=None, first_player="Cilvēks"):

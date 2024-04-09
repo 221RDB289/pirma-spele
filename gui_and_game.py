@@ -166,18 +166,19 @@ class GUI:
 
     # dators veic gājienu:
     def computer_move(self):
-        # fiksējam laiku, pirms gājiena veikšanas
-        start_time = time.time()
-
         # iepriekšējais skaitlis (pirms gājiena veikšanas), lai to attēlotu datora pēdējā veiktā gājiena sadaļā:
         previous_number = self.current_node.number
         # dators iegūst labāko gājienu atkarībā no algoritma:
         # minimaks:
         if self.algorithm_value.get() == "Minimaksa":
+            start_time = time.perf_counter() # fiksējam laiku, pirms algoritma izsaukšanas
             self.current_node, _ = minimax(self.current_node)  # atjauno spēles koku, jeb tā stāvokli (mums nevajag saglabāt racionālo spēles rezultātu)
+            end_time = time.perf_counter() # laiks pēc algoritma izpildes
         # alfabeta:
         else:
+            start_time = time.perf_counter() # fiksējam laiku, pirms algoritma izsaukšanas
             self.current_node, _ = alphabeta(self.current_node)  # atjauno spēles koku, jeb tā stāvokli (mums nevajag saglabāt racionālo spēles rezultātu)
+            end_time = time.perf_counter() # laiks pēc algoritma izpildes
 
         # atjauno datus grafiskajā interfeisā:
         self.update_state()
@@ -188,11 +189,10 @@ class GUI:
             # beidz spēli un parāda spēles beigu/rezultāta logu:
             self.show_results()
         # (nav nepieciešams norādīt, ka cilvēkam ir jāveic nākamais gājiens, jo tas notiek spiežot reizinātāja pogas)
-        end_time = time.time() # laks pēc gājiena veikšanas
 
-        print(f"Dators veica gājienu {(end_time - start_time)*100} milisekundēs")
+        # algoritma patērētais laiks un apskatīto virsotņu skaits:
+        print(f"Dators veica gājienu {(end_time - start_time)*1000} milisekundēs")
         print(f"Virsotņu skaits, kuru apskatīja dators: {node_count('get')}")
-
         node_count("reset")
 
     # spēlēt vēlreiz (kad spēle jau ir beigusies):

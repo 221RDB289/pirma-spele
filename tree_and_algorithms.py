@@ -22,14 +22,14 @@ def minimax(node, is_maximizing=True):
                 best_move = child_node
         return best_move, max_eval
     else:  # ja notiek minimizācija
-        _, max_eval = minimax(best_move, True)  # jaunā stāvokļa heiristiskais novērtējums (pašu stāvokļa instanci vēlreiz mums iegūt nevajag)
+        _, min_eval = minimax(best_move, True)  # jaunā stāvokļa heiristiskais novērtējums (pašu stāvokļa instanci vēlreiz mums iegūt nevajag)
         for child_node in node.children[1:]:  # (izņemot pirmo vērtību, jo tā jau tika izmantota)
             _, eval = minimax(child_node, True)  # jaunā stāvokļa heiristiskais novērtējums (pašu stāvokļa instanci vēlreiz mums iegūt nevajag)
             # pārbauda vai jaunā stāvokļa novērtējums ir labāks nekā iepriekšējā stāvokļa:
-            if eval < max_eval:
-                max_eval = eval
+            if eval < min_eval:
+                min_eval = eval
                 best_move = child_node
-        return best_move, max_eval
+        return best_move, min_eval
 
 
 # alfabeta algoritms:
